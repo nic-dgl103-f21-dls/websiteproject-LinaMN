@@ -1,35 +1,98 @@
 /* website project farm and folk */
+
 html {font-size: 62.5%} /* so I can work with rem */
-* {
-    box-sizing: border-box;
-}   /* tells the browser to account for any border and padding in the values you specify for an element's width and height */     
+
+* { box-sizing: border-box;
+}      
 
 /* index */
 
-nav {
-
-
+.header {/* Flexbox */
+         display: flex;
+         align-items: center;
+         /* sizing */
+         height: 13vh;   
 }
+.header nav {width: 20vw;
+             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+             font-size: 1.7rem;
+             flex: 2;
+             padding-top: 10px;
+}
+.header header { width: 30vw;
+                 padding-left: 30px;
+                 flex: 1;
+                 padding-top: 10px;}
+nav ul { display: flex;
+         justify-content: flex-end;
+         list-style-type: none;
+        }
+nav li a {text-decoration: none;
+          display: block;
+          width: 100px;
+          color: black;
+    
+         }
+nav li a:hover { color: #986b58;}
 
 body { 
-    /* The body has a default margin, which we do not want interfering without image header, which is why we have set it to 0 */ 
+    /* The body has a default margin, which we do not want interfering with image header, which is why I have set it to 0 */ 
       margin: 0; 
-      font-family: BrandonGrotesqueRegular;
+      padding: 0;
+
+      /* Text styles */
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+      font-size: 1.6rem;
     }
 
 .hero { /* sizing of hero image https://codetheweb.blog/fullscreen-image-hero/ note vw/vh is % of veiwport width and height*/
-    width: 100vw;
-    height: 100vh; 
+      width: 100vw;
+      height: 100vh; 
     
+      /* Flexbox */
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    /* Flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      /* Text styles make all lines centered */
+       text-align: center;
+       color: #efe6e1;
 
-    /* Text styles make all lines centered */
-    text-align: center;
+      /* Background Styles */
+      /* background image doesn't take colors but take gradients, 0 is full transparency in rgba, make sure to separate multiple backgrounds with commas */
+      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("images/soaplady.JPG");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
 }
+.hero h1 { 
+          /* Text styles */
+          font-size: 5rem;
+          font-family: BrandonGrotesqueRegular;
+
+
+          /* Margins */
+          margin-top: 0; 
+          margin-bottom: 10px;
 }
 
-.hero h1 {font-size: 3rem;}
+.hero .btn { /* a elements are inline by default block fixes this */ 
+            /* Positioning and sizing */
+            display: block;
+            width: 200px;
+
+            /* Padding and margins */
+            padding: 10px;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto; /* auto takes up the maximum amount of space available to center button */
+
+            /* Border styles */
+            border: 3px solid #efe6e1;
+
+            /* Text styles */
+            color: #efe6e1;
+            text-decoration: none; /*removes line under */ 
+            font-size: 2rem;
+        }
