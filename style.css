@@ -1,17 +1,55 @@
 /* website project farm and folk */
 
 html {font-size: 62.5%} /* so I can work with rem */
-
 * { box-sizing: border-box;
 }      
 
-/* index */
 
+/* General for whole site */
 h1 { font-family:"Garamond Premier Pro";
      font-size: 6.4rem;
      font-weight: 200;
      font-style: normal;
      line-height: 1.2;
+}
+h2 { font-size: 4rem;
+font-family:"Garamond Premier Pro";
+font-weight: 200;
+     font-style: normal;
+     line-height: 1.2;}
+h4 { font-size: 1.5rem;
+     font-weight: 400;
+    padding-bottom: 20px;}
+body { 
+    /* The body has a default margin, which we do not want interfering with image header, which is why I have set it to 0 */ 
+      margin: 0; 
+      padding: 0;
+
+      /* Text styles */
+     font-family: "Helvetica Neue LT 45 Light",Helvetica,Arial,sans-serif; 
+     line-height: 1.42857143;
+     color: #372e2c;
+     background-color: #fff;
+     letter-spacing: 0.05rem;
+     font-size: 1.6rem;
+    }
+/* index page */
+/* banner */
+
+
+/* Top header Section */
+.banner {display: flex;
+    flex-direction: column;
+}
+.banner_inner {display: flex;
+               background-color: #986b58;
+               justify-content: center;
+               align-items: center;
+               padding-top: 20px;
+               height: 40px;                       
+}
+.banner_inner h4 { text-align: center;
+    color:#efe6e1;
 }
 
 .header {/* Flexbox */
@@ -20,9 +58,12 @@ h1 { font-family:"Garamond Premier Pro";
          /* sizing */
          height: 13vh; 
          width: 100vw;
-         background-color: #efe6e1;
+         background-color:rgba(216, 146, 96, 0.2);
          position: sticky; top: 0; /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */
-         
+}
+.header header { flex: 1;
+    padding-left: 75px;
+                 
 }
 .header nav {
              font-family: "Helvetica Neue LT 45 Light",Helvetica,Arial,sans-serif; 
@@ -33,11 +74,6 @@ h1 { font-family:"Garamond Premier Pro";
              letter-spacing: 0.1rem;
              font-weight: 350;
              
-}
-             
-.header header { flex: 1;
-    padding-left: 75px;
-                 
 }
 nav ul { display: flex;
          justify-content: flex-end;
@@ -51,18 +87,7 @@ nav li a {text-decoration: none;
          }
 nav li a:hover { color: #986b58;}
 
-body { 
-    /* The body has a default margin, which we do not want interfering with image header, which is why I have set it to 0 */ 
-      margin: 0; 
-      padding: 0;
-
-      /* Text styles */
-     font-family: "Helvetica Neue LT 45 Light",Helvetica,Arial,sans-serif; 
-     line-height: 1.42857143;
-     color: #372e2c;
-     background-color: #fff;
-     letter-spacing: 0.05rem;
-    }
+/* hero Section */
 
 .hero { /* sizing of hero image https://codetheweb.blog/fullscreen-image-hero/ note vw/vh is % of veiwport width and height*/
       width: 100vw;
@@ -73,7 +98,6 @@ body {
       align-items: center;
 
       /* Text styles make all lines centered */
-       
        color: #efe6e1;
 
       /* Background Styles */
@@ -83,6 +107,7 @@ body {
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      
 }
 .hero h1 { /* Margins */
           margin-top: 0; 
@@ -90,14 +115,12 @@ body {
           width: 750px;
           padding-left: 75px;
 }
-.hero h2 {
+.hero h3 {
      font-weight: 400;
      font-size: 2.2rem;
      width: 750px;
-     padding-left: 75px;
-     
+     padding-left: 75px;     
 } 
-
 .hero .btn { /* a elements are inline by default block fixes this */ 
             /* Positioning and sizing */
             display: block;
@@ -121,3 +144,20 @@ body {
             font-weight: 550;
             
         }
+/* 3 product types on index */
+.products {
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+
+            width: 100vw;
+            height: 100vh; 
+}
+.products h2 {padding-top: 30px;}
+
+.piclayout { 
+            display: flex;
+            justify-content: center;
+}
+.products .piclayout li a {margin-right: 20px;}
