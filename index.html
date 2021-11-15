@@ -4,6 +4,19 @@
      <title>Home Page Website Project</title>
      <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+<style>
+ #gallery ul {list-style-type: none;}
+ #gallery span { display: none; }  
+ #gallery a:hover span { display: block;
+                        position: absolute;
+                        top: 10px; 
+						left: 300px; 
+						text-align: center;
+
+    
+}
+
+</style>
 </head>
 <body>
 <div class="banner"> 
@@ -55,14 +68,10 @@
       <a href="shop.html">
           <img src="images/thievesbar.JPG" width="400" height="550" alt="woman holding soap">
       </a>
-     <figcaption>
+     <figcaption id="gallery">
          <ul>
-            <li><a href="thieves1.JPG"><img src="images/soap.JPG" width="400" height="550" alt="woman holding soap"></a></li>
-
-            <li><a href="photo1.jpg"><img src="thumb1.jpg" width="100" height="75" alt="Golden Gate Bridge">
-                    <span><img src="photo1.jpg" width="250" height="150" alt="Golden Gate Bridge"><br>Golden Gate Bridge</span></a>
-            </li>
-
+            <li><a href="thieves1.JPG"></a><img src="thieves1thumb.gif" width="100" height="100" alt="theives soap">
+            <span><img src="thieves1.JPG " width="400" height="550" alt="thieves soap"</span></li>
          </ul>
      </figcaption>
     </figure>
