@@ -166,7 +166,7 @@ nav li a:hover { color: #986b58;}
 /* video section */
 .video {
         display: flex;
-        flex-direction: column
-        align-items:
+        flex-direction: column;
+        align-items: center;
 }
                            
