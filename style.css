@@ -6,6 +6,10 @@ html {font-size: 62.5%} /* so I can work with rem */
 
 
 /* General for whole site */
+hr {
+  border: 1px solid #efe6e1;
+  margin: 0;
+}
 h1 { font-family:"Garamond Premier Pro";
      font-size: 6.4rem;
      font-weight: 200;
@@ -164,11 +168,18 @@ nav li a:hover { color: #986b58;}
                            color: #372e2c;}
 
 /* video section */
-.video {
+.video { 
         display: flex;
         flex-direction: column;
         align-items: center;
 }
+/* video sizing */
+.video iframe {width: 100vw; 
+               height: 100vh;
+               margin-top: 20px;
+}
+.video h2 {padding-top: 20px;}
+
 /* featured product section */                         
 .featuredproduct {display: flex;                 
 }
@@ -176,7 +187,8 @@ nav li a:hover { color: #986b58;}
                   justify-content: center;
                   width: 80vw;
                   margin-left: auto;
-                  margin-right: auto;}
+                  margin-right: auto;
+                 margin-top: 40px;}
 .featuredproduct aside {padding-right: 100px;}
 .featureinfo {display: flex;
               flex-direction: column;
@@ -203,5 +215,10 @@ nav li a:hover { color: #986b58;}
                  font-size: 1.4rem;
                  font-weight: 550;
 }
-
+ .featuredproduct .gallery span {display: none;}
+ .featuredproduct .gallery ul {list-style-type: none;}
+ .featuredproduct .gallery a:hover span { 
+                                         display: block;
+                                         position: absolute;
+}
             
