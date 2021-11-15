@@ -172,6 +172,12 @@ nav li a:hover { color: #986b58;}
 /* featured product section */                         
 .featuredproduct {display: flex;                 
 }
+.featuredproduct {display: flex;
+                  justify-content: center;
+                  width: 80vw;
+                  margin-left: auto;
+                  margin-right: auto;}
+.featuredproduct aside {padding-right: 100px;}
 .featureinfo {display: flex;
               flex-direction: column;
               align-items: space-between;}
@@ -183,6 +189,8 @@ nav li a:hover { color: #986b58;}
 
                   /* Padding and margins */
                   padding: 12px 17px;
+                  margin-top: 20px;
+                  margin-bottom: 20px;
                   
                   /* Border styles */
                  
