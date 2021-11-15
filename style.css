@@ -6,14 +6,12 @@ html {font-size: 62.5%} /* so I can work with rem */
 
 
 /* General for whole site */
-main {
-    margin: auto;
+main { margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
- 
 h1 { font-family:"Cormorant Garamond Medium";
      font-style: normal;
      font-size: 6.4rem;
@@ -25,6 +23,11 @@ h2 { font-size: 4rem;
      font-weight: 200;
      font-style: normal;
      
+}
+h3 { font-size: 2.2rem;
+     font-family: "Cormorant Garamond";  
+     font-weight: 500;  
+     letter-spacing: 0.1rem;
 }
 h4 { font-size: 1.7rem;
      font-weight: 500;
@@ -133,13 +136,9 @@ nav li a:hover { color: #986b58;}
           
 }
 .hero h3 {
-     font-size: 2.2rem;
      width: 750px;
      padding-left: 75px; 
      padding-right: 40px;
-     font-family: "Cormorant Garamond";  
-     font-weight: 500;  
-     letter-spacing: 0.1rem;
 } 
 .hero .btn { /* a elements are inline by default block fixes this */ 
             /* Positioning and sizing */
