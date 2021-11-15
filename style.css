@@ -169,4 +169,30 @@ nav li a:hover { color: #986b58;}
         flex-direction: column;
         align-items: center;
 }
-                           
+/* featured product section */                         
+.featuredproduct {display: flex;                 
+}
+.featureinfo {display: flex;
+              flex-direction: column;
+              align-items: space-between;}
+              
+.featureinfo .btn { /* a elements are inline by default block fixes this */ 
+               /* Positioning and sizing */
+                  display: block;
+                  width: 200px;
+
+                  /* Padding and margins */
+                  padding: 12px 17px;
+                  
+                  /* Border styles */
+                 border: 1px solid #efe6e1;
+                 
+                 /* Text styles */
+                 color: #efe6e1;
+                 text-decoration: none; /*removes line under */ 
+                 text-align: center;
+                 font-size: 1.4rem;
+                 font-weight: 550;
+}
+
+            
