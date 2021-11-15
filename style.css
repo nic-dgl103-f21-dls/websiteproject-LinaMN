@@ -175,7 +175,7 @@ nav li a:hover { color: #986b58;}
 .featureinfo {display: flex;
               flex-direction: column;
               align-items: space-between;}
-              
+
 .featureinfo .btn { /* a elements are inline by default block fixes this */ 
                /* Positioning and sizing */
                   display: block;
@@ -185,10 +185,11 @@ nav li a:hover { color: #986b58;}
                   padding: 12px 17px;
                   
                   /* Border styles */
-                 border: 1px solid #efe6e1;
+                 
+                 background-color: #efe6e1;
                  
                  /* Text styles */
-                 color: #efe6e1;
+                 color: #372e2c;
                  text-decoration: none; /*removes line under */ 
                  text-align: center;
                  font-size: 1.4rem;
