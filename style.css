@@ -58,7 +58,7 @@ body {
          /* sizing */
          height: 13vh; 
          width: 100vw;
-         background-color:rgba(216, 146, 96, 0.2);
+         background-color:rgba(216, 146, 96, 0.1);
          position: sticky; top: 0; /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */
 }
 .header header { flex: 1;
@@ -148,16 +148,25 @@ nav li a:hover { color: #986b58;}
 .products {
             display: flex;
             flex-direction: column;
-            
             align-items: center;
-
-            width: 100vw;
-            height: 100vh; 
 }
 .products h2 {padding-top: 30px;}
 
 .piclayout { 
             display: flex;
-            justify-content: center;
+            list-style-type: none;
+            
+
 }
-.products .piclayout li a {margin-right: 20px;}
+.products .piclayout li a img { margin-right: 20px;}
+.products .piclayout li a  { text-decoration: none;
+                           text-align: center;
+                           color: #372e2c;}
+
+/* video section */
+.video {
+        display: flex;
+        flex-direction: column
+        align-items:
+}
+                           
