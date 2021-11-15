@@ -210,21 +210,15 @@ nav li a:hover { color: #986b58;}
                align-items: center;
                margin-left: auto;
                margin-right: auto;
+               width: 100vw;   
+               height: 100vh;         
         
 }
 /* video sizing */
-.video iframe {width: 90vw;
-height: 100vh;
-margin-left: auto;
-margin-right: auto;
-
-}
 
 .video h2 {padding-top: 30px;
            margin-bottom: 0;
            color: #efe6e1;
-           text-align: center;
-           
 }
          
 
