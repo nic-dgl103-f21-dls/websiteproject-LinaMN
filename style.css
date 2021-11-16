@@ -189,55 +189,38 @@ nav li a:hover { color: #986b58;}
         justify-content: center;
         background-color: #986b58;
         margin: 0;
-        padding: 0;
+        padding-bottom: 100px;
         width: 100vw;   
-        height: 100vh;         
-        
+        height: 100vh;        
 }
-/* video sizing */
-
-.video h2 {padding-top: 30px;
-           margin-bottom: 0;
-           color: #efe6e1;
+.video h2 { color: #efe6e1;
 }
          
-
-/*written blurb under video*/
-.wrapper h2 {margin-bottom: 0;}
-
 /* featured product section */                      
-.featuredproduct {display: flex;
-                  justify-content: center;
-                  align-items: flex-start;
-                  margin-left: auto;
-                  margin-right: auto;
-                 margin-top: 0px;
-                   margin-bottom: 0px;
-                   padding-top:100px;
-                   padding-bottom: 100px;
-                 background-image: url("marble.jpg");
-        
-                 background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+.featuredproduct { display: flex;
+                  align-items: center;
+                  margin: 50px 0;
+                  padding: 0;
+                  width: 100vw;
+                  height: 50vw;
             }
+.featuredproduct a {display: block;
+                    flex: 4;
+                    padding-left: 40px;
+}
+.featuredproduct aside {flex: 6;
+                        padding: 90px 40px;
+                        margin-left: 40px;
+                        margin-right: 40px;
+                        margin-bottom: 7px;
+                        border: 1px solid #efe6e1;
+}
                 
-
-.featuredproduct aside {
-                    margin-top: 17px;
-                    width:476px; 
-                    height: 719px;
-                    padding-bottom: 40px;
-                    
-                }
-.featureinfo {display: flex;
+.featureinfo { display: flex;
               flex-direction: column;
-              padding-left: 10px;
-             justify-content:flex-start;}
-.featureinfo h2 {margin-top: 0;
-padding-right: 20px;
-padding-bottom: 7px;}
+              padding: 0;
+              margin: 0;
+}
 
 .featureinfo .btn { /* a elements are inline by default block fixes this */ 
                /* Positioning and sizing */
@@ -245,7 +228,7 @@ padding-bottom: 7px;}
                   width: 200px;
 
                   /* Padding and margins */
-                  padding: 12px 17px;
+                  padding: 15px 17px;
                   margin-top: 20px;
                   margin-bottom: 20px;
                   
@@ -261,12 +244,7 @@ padding-bottom: 7px;}
                  font-weight: 550;
                  font-family: "Josefin Sans";
 }
- .featuredproduct .gallery span {display: none;}
- .featuredproduct .gallery ul {list-style-type: none;}
- .featuredproduct .gallery a:hover span { 
-                                         display: block;
-                                         position: absolute;
-}
+.featureinfo a:hover { background-color: rgba(152,107,88,0.5);}
 
 .makers { /* sizing of hero image https://codetheweb.blog/fullscreen-image-hero/ note vw/vh is % of veiwport width and height*/
       width: 100vw;
