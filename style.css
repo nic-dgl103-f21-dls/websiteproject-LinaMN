@@ -209,13 +209,12 @@ nav li a:hover { color: #986b58;}
                     padding-left: 40px;
 }
 .featuredproduct aside {flex: 6;
-                        padding: 90px 40px;
+                        padding: 90px 5%;
                         margin-left: 40px;
                         margin-right: 40px;
                         margin-bottom: 7px;
                         border: 1px solid #efe6e1;
-}
-                
+}              
 .featureinfo { display: flex;
               flex-direction: column;
               padding: 0;
@@ -294,7 +293,56 @@ nav li a:hover { color: #986b58;}
             text-align: center;
             font-size: 1.4rem;
             font-weight: 550;
-            font-family: "Josefin Sans";
+            font-family: "Josefin Sans";}
+
+.journal { display: flex;
+          align-items: center;
+          margin: 50px 0;
+          padding: 0;
+          width: 100vw;
+          height: 50vw;
+}
+.journal  a {display: block;
+                    flex: 4;
+                    padding-right: 40px;
+}
+.journal aside {flex: 6;
+                        padding: 8.8% 4%;
+                        margin-left: 40px;
+                        margin-right: 40px;
+                        margin-bottom: 7px;
+                        border: 1px solid #efe6e1;
+}              
+.journalinfo { display: flex;
+              flex-direction: column;
+              padding: 0;
+              margin: 0;
+}
+
+.journalinfo .btn { /* a elements are inline by default block fixes this */ 
+               /* Positioning and sizing */
+                  display: block;
+                  width: 200px;
+
+                  /* Padding and margins */
+                  padding: 15px 17px;
+                  margin-top: 20px;
+                  margin-bottom: 20px;
+                  
+                  /* Border styles */
+                 
+                 background-color: #efe6e1;
+                 
+                 /* Text styles */
+                 color: #372e2c;
+                 text-decoration: none; /*removes line under */ 
+                 text-align: center;
+                 font-size: 1.4rem;
+                 font-weight: 550;
+                 font-family: "Josefin Sans";
+}
+.journalinfo a:hover { background-color: rgba(152,107,88,0.5);}
+
 
             
             
