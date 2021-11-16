@@ -46,44 +46,38 @@ body { /* The body has a default margin, which we do not want interfering with i
 }
 /* index page */
 
-/* banner */
-.banner {display: flex;
+
+.header {display: flex;
         flex-direction: column;
-        position: sticky; top: 0;
+        position: sticky; top: 0; /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */
 }
-.banner_inner {display: flex;
+.banner {display: flex;
                background-color: #986b58;
                justify-content: center;
                align-items: center;
                height: 40px;  
                padding-top: 5px;                    
 }
-.banner_inner h4 { color:#efe6e1; }
+.banner h4 { color:#efe6e1; }
 /*logo and nav*/
 
-.header {/* Flexbox */
-         display: flex;
-         align-items: center;
+.logonav { display: flex;
+           align-items: center;
         
-         /* sizing */
-         height: 11vh; 
-         width: 100vw;
-         background-color: #efe6e1;
-         /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */
+           /*sizing of pink header part*/
+           height: 11vh; 
+           background-color: #efe6e1;
 }
-.header header { flex: 1;
-    padding-left: 75px;
-                 
+.logonav a { display: block;
+             flex: 1;
+             padding-left: 75px;
 }
-.header nav {
-             font-family:"Cormorant Garamond";
-             font-size: 1.6rem;
+.logonav nav { font-size: 1.6rem;
              flex: 2;
              padding-top: 10px;
              padding-right: 60px;
              letter-spacing: 0.1rem;
              font-weight: 400;
-             
 }
 nav ul { display: flex;
          justify-content: flex-end;
