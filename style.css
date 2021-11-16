@@ -346,6 +346,15 @@ nav li a:hover { color: #986b58;}
 }
 .journalinfo a:hover { background-color: rgba(152,107,88,0.5);}
 
+footer {text-align: center;
+        font-size: 1.4;
+         background-color: #efe6e1;
+         width: 100vw;
+         height: 10vh;
+
+
+
+}
 
             
             
