@@ -6,7 +6,7 @@ html {font-size: 62.5%} /* so I can work with rem */
 
 
 /* General for whole site */
-main { display: flex;
+main { display: flex; /*do I need this code for main??*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -259,14 +259,14 @@ nav li a:hover { color: #986b58;}
 
       /* Background Styles */
       /* background image doesn't take colors but take gradients, 0 is full transparency in rgba, make sure to separate multiple backgrounds with commas */
-      background-image: url("images/soapwoman.JPG");
+      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/soapwoman.JPG");
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;   
 }
 .makers h2 { /* Margins */
           margin: 0;
-          width: 820px;
+          width: 700px;
           padding-left: 75px; 
 }
 .makers h3 {width: 750px;
@@ -346,15 +346,15 @@ nav li a:hover { color: #986b58;}
 }
 .journalinfo a:hover { background-color: rgba(152,107,88,0.5);}
 
-footer {text-align: center;
+footer {display: flex;
+       justify-content: center;
+         align-items: center;
         font-size: 1.4;
-         background-color: #efe6e1;
+         background-color: #EFE6E1;
          width: 100vw;
-         height: 10vh;
+         height: 20vh;
+        letter-spacing: 0.1rem;}
 
-
-
-}
 
             
             
