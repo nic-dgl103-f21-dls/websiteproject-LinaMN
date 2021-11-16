@@ -6,13 +6,16 @@ html {font-size: 62.5%} /* so I can work with rem */
 
 
 /* General for whole site */
-main { margin: auto;
-    display: flex;
+main { display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    
 }
-h1 h2 h3 h4 { font-family:"Cormorant Garamond";
+h1 h2 h3 h4 { font-family:"Cormorant Garamond"; 
+              color: #372e2c;
 }
 h1 h2 h3 { font-weight: 100;
 }
@@ -101,7 +104,7 @@ nav li a:hover { color: #986b58;}
       flex-direction: column;
       justify-content:center;
 
-      /* Text styles make all lines centered */
+      /* Text styles */
        color: #efe6e1;
 
       /* Background Styles */
@@ -148,49 +151,47 @@ nav li a:hover { color: #986b58;}
 .hero a:hover { background-color: rgba(152,107,88,0.5);}
 
 /* 3 product types on index */
-.products {
-            display: flex;
+.products { display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            padding-bottom: 40px;
-            background-image: url("marble.jpg");
-        
-                 background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-}
-.products h2 {padding-top: 50px;
-              margin-bottom: 0;}
+            width: 100vw;
+            height: 100vh;
 
-.piclayout { 
-            display: flex;
-            list-style-type: none;
-            
-
+            margin: 0;
+            padding: 0;
 }
-.products .piclayout li a img { margin-right: 20px;}
-.products .piclayout li a  { text-decoration: none;
-                           text-align: center;
-                           color: #372e2c;
-                           font-family:"Cormorant Garamond";
-                           font-weight: 300;
-                           font-size: 2rem;
-                           letter-spacing: 0.1rem;
-                }
+.products h2 { margin: 0 0 10px 0;}
+
+.products ul { display: flex;
+               list-style-type: none;
+               font-size: 1.7rem;
+               font-weight: 300;
+               letter-spacing: 0.1rem;
+               margin: 0;
+               padding: 0;
+               justify-content: space-evenly;
+               
+}
+.products li a { text-decoration: none; /*removes line for link*/ 
+                 display: block; 
+                 color: #372e2c;
+                 text-align: center;
+                 padding: 10px;
+}
+.products a:hover { color: #986b58;
+}
 
 /* video section */
-.video { 
-        display: flex;
+.video { display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         background-color: #986b58;
-               justify-content: center;
-               align-items: center;
-               margin-left: auto;
-               margin-right: auto;
-               width: 100vw;   
-               height: 100vh;         
+        margin: 0;
+        padding: 0;
+        width: 100vw;   
+        height: 100vh;         
         
 }
 /* video sizing */
