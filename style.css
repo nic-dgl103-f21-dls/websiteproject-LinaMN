@@ -171,6 +171,7 @@ nav li a:hover { color: #986b58;}
                margin: 0;
                padding: 0;
                justify-content: space-evenly;
+               flex-wrap: wrap;
                
 }
 .products li a { text-decoration: none; /*removes line for link*/ 
