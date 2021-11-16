@@ -356,6 +356,43 @@ footer {display: flex;
          height: 20vh;
         letter-spacing: 0.1rem;}
 
+        /*Shop Page*/
+
+/* Shop Page */
+
+.shop { display: flex; /*why is flex direction row here?????*/
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+}
+.shop  h2 { margin: 20px 0 20px 0;}
+
+.shop ul { display: flex;
+               list-style-type: none;
+               font-size: 2rem;
+               font-weight: 300;
+               letter-spacing: 0.1rem;
+               margin: 30px;
+               padding: 0;
+               justify-content: space-evenly;
+               flex-wrap: wrap;
+               
+}
+.shop li a { text-decoration: none; /*removes line for link*/ 
+                 display: block; 
+                 color: #372e2c;
+                 text-align: center;
+                 padding-bottom: 30px;
+}
+.shop a:hover { color: #986b58;
+}
+
+
+
 
             
             
