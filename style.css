@@ -14,7 +14,7 @@ main { margin: auto;
 }
 h1 h2 h3 h4 { font-family:"Cormorant Garamond";
 }
-h1 h2 h3 { font-weight: 200;
+h1 h2 h3 { font-weight: 100;
 }
 h1 { font-size: 6.4rem;
      line-height: 1.2;
@@ -45,7 +45,6 @@ body { /* The body has a default margin, which we do not want interfering with i
       background-color: #fff;
 }
 /* index page */
-
 
 .header {display: flex;
         flex-direction: column;
@@ -99,7 +98,8 @@ nav li a:hover { color: #986b58;}
     
       /* Flexbox */
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      justify-content:center;
 
       /* Text styles make all lines centered */
        color: #efe6e1;
@@ -111,14 +111,11 @@ nav li a:hover { color: #986b58;}
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      
 }
 .hero h1 { /* Margins */
-          margin-top: 0; 
-          margin-bottom: 10px;
-          width: 750px;
-          padding-left: 75px;
-          
+          margin: 0;
+          width: 820px;
+          padding-left: 75px;         
 }
 .hero h3 {
      width: 750px;
@@ -132,10 +129,8 @@ nav li a:hover { color: #986b58;}
 
             /* Padding and margins */
             padding: 12px 17px;
-            margin-top: 38px;
             margin-left: 75px;
-            margin-right: auto; /* auto takes up the maximum amount of space available to center button */
-
+        
             /* Border styles */
             border: 1px solid #efe6e1;
             
@@ -147,8 +142,11 @@ nav li a:hover { color: #986b58;}
             font-size: 1.4rem;
             font-weight: 550;
             font-family: "Josefin Sans";
+
             
-        }
+}
+.hero a:hover { background-color: rgba(152,107,88,0.5);}
+
 /* 3 product types on index */
 .products {
             display: flex;
