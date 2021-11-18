@@ -254,6 +254,7 @@ nav li a:hover { color: #986b58;}
       display: flex;
       flex-direction: column;
       justify-content: center;
+      
 
       /* Text styles make all lines centered */
        color: #efe6e1;
@@ -347,6 +348,7 @@ nav li a:hover { color: #986b58;}
 }
 .journalinfo a:hover { background-color: rgba(152,107,88,0.5);}
 
+/*footer*/
 footer {display: flex;
        justify-content: center;
          align-items: center;
@@ -390,6 +392,37 @@ footer {display: flex;
 }
 .shop a:hover { color: #986b58;
 }
+/*About*/
+.firstimage { width: 100vw;
+             height: 80vh; 
+    
+             /* Flexbox */
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-right: auto;
+             margin-left: auto;
+             /* Text styles make all lines centered */
+            color: #efe6e1;
+
+            /* Background Styles */
+           /*change the image here */
+           background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("images/friends.JPG");
+           background-size: cover;
+           background-position: center center;
+           background-repeat: no-repeat;
+}
+
+ .firstimage h2 { width: 80vw;
+     padding-right: 5%;
+     padding-top: 30%;
+     margin-right: auto;
+     margin-left: auto;
+     text-align: center;
+      
+
+}
+
 
 
 
