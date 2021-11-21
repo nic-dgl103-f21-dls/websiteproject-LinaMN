@@ -5,11 +5,6 @@ html {font-size: 62.5%} /* so I can work with rem */
 }   
 /* General for whole site */
 }
-.center {justify-content: center;
-         align-items: center;
-          margin: 0 auto;
-          padding: 0;
-    }
 
 h1 h2 h3 h4 { font-family: "Cormorant Garamond", serif;
               color: #372e2c;
@@ -44,6 +39,27 @@ body { /* The body has a default margin, which we do not want interfering with i
       /*background*/
       background-color: #fff;
 }
+.columnwrap { display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+}
+.center { 
+     text-align: center;
+}
+.wrap {      display: flex;
+             justify-content: center;
+             align-items: center;
+             margin: 0 auto;
+             max-width: 850px;
+}
+.background {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+}
+
 /* index page */
 
 .header { position: sticky; top: 0; /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */ /*makes a sticky header*/
@@ -102,10 +118,8 @@ nav li a:hover { color: #986b58;}
       height: 100vh; 
     
       /* Flexbox */
-      display: flex;
-      flex-direction: column;
-      justify-content:center;
-
+      align-items: flex-start; /*to override class columnwrap*/
+      
       /* Text styles */
        color: #efe6e1;
        
@@ -113,16 +127,12 @@ nav li a:hover { color: #986b58;}
       /* Background Styles */
       /* background image doesn't take colors but take gradients, 0 is full transparency in rgba, make sure to separate multiple backgrounds with commas */
       background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("images/soaplady.JPG");
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      
 }
 .hero h1 { /* Margins */
           margin: 0;
           width: 57vw;
           padding-left: 5%;
-          font-family: "Cormorant Garamond Medium"
 }
 .hero h3 {
      width: 50vw;
@@ -134,7 +144,7 @@ nav li a:hover { color: #986b58;}
             width: 200px;
 
             /* Padding and margins */
-            padding: 12px 17px;
+            padding: 1% 2%;
             margin-left: 5%;
         
             /* Border styles */
@@ -153,10 +163,7 @@ nav li a:hover { color: #986b58;}
 .hero a:hover { background-color: rgba(152,107,88,0.5);}
 
 /* 3 product types on index */
-.products { display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+.products { 
             margin: 0 0 5% 0;
             padding: 0;
 }
@@ -183,15 +190,14 @@ nav li a:hover { color: #986b58;}
 
 /* video section */
 
-.video { display: flex;
-         flex-direction: column;
+.video { 
          background-color: #986b58;
          padding-bottom: 5%;
-         justify-content: center;
-         align-items: center;      
+          
 }
 .video iframe {width: 90vw;
-height: 100vh;}
+               height: 100vh;
+}
 .video h2 { color: #efe6e1;
      
 }
@@ -471,18 +477,6 @@ footer {display: flex;
 }    
 .aboutreverse p {text-align: center;}
 .aboutreverse h2 {text-align: center;}
-
-.center { 
-     text-align: center;
-}
-.wrap {display: flex;
-             justify-content: center;
-             align-items: center;
-             margin: 0 auto;
-             max-width: 850px;
-}
-
-
 
 
 
