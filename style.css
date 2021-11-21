@@ -183,37 +183,37 @@ nav li a:hover { color: #986b58;}
 
 /* video section */
 .video { display: flex;
+         flex-direction: column;
          background-color: #986b58;
-        margin: 0; 
-        width: 80%; 
+         margin: 0;
+         padding-bottom: 5%;
+         justify-content: center;
+         align-items: center;
+         
 }
-.video h2 { text-align: center;
-            color: #efe6e1;
+.video div { color: #efe6e1;
 }
          
 /* featured product section */                      
 .featuredproduct { display: flex;
-                  align-items: center;
-                  margin: 50px 0;
-                  padding: 0;
-                  width: 100vw;
-                  height: 50vw;
+                   align-items: flex-start; 
+                   justify-content: center;                             
 }
-.featuredproduct a {display: block;
-                    flex: 4;
-                    padding-left: 40px;
+.featuredproduct div {display: block;
+                    
+                     margin: 5% 1% 5% 5%;
+                   
 }
-.featuredproduct aside {flex: 6;
-                        padding: 90px 5%;
-                        margin-left: 40px;
-                        margin-right: 40px;
-                        margin-bottom: 7px;
-                        border: 1px solid #efe6e1;
-}              
+.featuredproduct aside { margin: 5% 5% 5% 0;
+     border: 1px solid #efe6e1;
+    }
+
 .featureinfo { display: flex;
               flex-direction: column;
-              padding: 0;
+              padding: 0 5% 12.5% 2%;
               margin: 0;
+              
+              
 }
 .featureinfo .btn { /* a elements are inline by default block fixes this */ 
                /* Positioning and sizing */
@@ -276,7 +276,7 @@ nav li a:hover { color: #986b58;}
             /* Padding and margins */
             padding: 12px 17px;
             margin-top: 38px;
-            margin-left: 75px;
+            margin-left: 5%
 
             /* Border styles */
             border: 1px solid #efe6e1;
@@ -294,26 +294,23 @@ nav li a:hover { color: #986b58;}
 
 
 .journal { display: flex;
-          align-items: center;
-          margin: 50px 0;
-          padding: 0;
-          width: 100vw;
-          height: 50vw;
+                   align-items: flex-start; 
+                   justify-content: center; 
+                   flex-direction: row-reverse;                            
 }
-.journal  a {display: block;
-                    flex: 4;
-                    padding-right: 40px;
+.journal div {display: block;
+                    
+                     margin: 5% 5% 5% 1%;
+                   
 }
-.journal aside {flex: 6;
-                        padding: 8.8% 4%;
-                        margin-left: 40px;
-                        margin-right: 40px;
-                        margin-bottom: 7px;
-                        border: 1px solid #efe6e1;
-}              
+.journal aside { margin: 8% 0% 3% 10;
+     border: 1px solid #efe6e1;
+     
+}
+
 .journalinfo { display: flex;
               flex-direction: column;
-              padding: 0;
+              padding: 5% 2% 10% 5%;
               margin: 0;
 }
 
