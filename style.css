@@ -1,15 +1,12 @@
 /* website project farm and folk */
 
+/* General for whole site */
+
 html {font-size: 62.5%} /* so I can work with rem */
 * { box-sizing: border-box;
 }   
-/* General for whole site */
-}
-
 h1 h2 h3 h4 { font-family: "Cormorant Garamond", serif;
               color: #372e2c;
-}
-h1 h2 h3 { 
 }
 h1 { font-size: 6.4rem;
      line-height: 1.2;
@@ -20,8 +17,7 @@ h3 { font-size: 2.2rem;
      letter-spacing: 0.1rem;
 }
 h4 { font-size: 1.7rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500; /* to do- add padding in banner section removed from here */
+     letter-spacing: 0.1rem;
 }
 body { /* The body has a default margin, which we do not want interfering with image header, which is why  I have set it to 0 */ 
       margin: 0; 
@@ -43,6 +39,7 @@ body { /* The body has a default margin, which we do not want interfering with i
               flex-direction: column;
               justify-content: center;
               align-items: center;
+              
 }
 .center { 
      text-align: center;
@@ -51,7 +48,7 @@ body { /* The body has a default margin, which we do not want interfering with i
              justify-content: center;
              align-items: center;
              margin: 0 auto;
-             max-width: 1000px;
+           
 }
 .background {
       background-size: cover;
@@ -59,6 +56,8 @@ body { /* The body has a default margin, which we do not want interfering with i
       background-repeat: no-repeat;
       background-attachment: fixed;
 }
+.margin {margin-right: 5%;
+          margin-left: 5%;}
 
 /* index page */
 
@@ -163,7 +162,9 @@ nav li a:hover { color: #986b58;}
 .hero a:hover { background-color: rgba(152,107,88,0.5);}
 
 /* 3 product types on index */
+
 .products { margin: 0 0 5% 0;
+            
 }
 
 .products ul { display: flex;
@@ -175,6 +176,7 @@ nav li a:hover { color: #986b58;}
                padding: 0;
                justify-content: space-evenly;
                flex-wrap: wrap;
+               
                
 }
 .products li a { text-decoration: none; /*removes line for link*/ 
@@ -339,12 +341,7 @@ footer { display: flex;
          width: 100vw;
          height: 15vh;
          letter-spacing: 0.1rem
-}
-
-
-
-
-        
+}     
 
 /* Shop Page */
 
@@ -379,6 +376,7 @@ footer { display: flex;
 .shop a:hover { color: #986b58;
 }
 /*About Page*/
+
 .firstimage { width: 100vw;
              height: 80vh; 
     
@@ -396,15 +394,12 @@ footer { display: flex;
            background-position: center center;
            background-repeat: no-repeat;
 }
-
-.color {background-color: #EFE6E1;}
+.color {background-color: #EFE6E1;} /*background color for page */
 
  .firstimage h2 { text-align: center;
      max-width: 550px;
      padding-left: 175px;
      color: #efe6e1;
-      
-
 }
 .about  { display: flex;
                   align-items: center;
@@ -416,9 +411,7 @@ footer { display: flex;
                   justify-content: center;
                   align-items: flex-start;
                   color: #efe6e1;
-                 
-                  
-            }
+}
 .about div {/*this is the image on the rigtht woman with soap */
                     flex: 5;
                     padding-left: 4%;
@@ -466,8 +459,7 @@ footer { display: flex;
 }    
 .aboutreverse p {text-align: center;}
 .aboutreverse h2 {text-align: center;}
-
-
+.h2 { font-size: 3rem;}
 
 
             
