@@ -301,12 +301,12 @@ height: 100vh;}
                    flex-direction: row-reverse;                            
 }
 .journal div {display: block;
-                    
                      margin: 5% 5% 5% 1%;
-                   
+                     
 }
 .journal aside { margin: 5% 0% 3% 5%;
      border: 1px solid #efe6e1;
+     
 }
 
 .journalinfo { display: flex;
@@ -442,14 +442,6 @@ footer {display: flex;
 .about h2 {text-align: center;}
 
 
-.center {flex: display;
-        justify-content: center;
-        align-items: center;
-     max-width: 850px;
-     color: #372e2c
-}
-
-
 
 .aboutreverse  { display: flex;
                   align-items: center;
@@ -480,11 +472,14 @@ footer {display: flex;
 .aboutreverse p {text-align: center;}
 .aboutreverse h2 {text-align: center;}
 
-.center {flex: display;
-        justify-content: center;
-        align-items: center;
-     max-width: 850px;
-     color: #372e2c
+.center { 
+     text-align: center;
+}
+.wrap {display: flex;
+             justify-content: center;
+             align-items: center;
+             margin: 0 auto;
+             max-width: 850px;
 }
 
 
