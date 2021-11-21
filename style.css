@@ -2,19 +2,16 @@
 
 html {font-size: 62.5%} /* so I can work with rem */
 * { box-sizing: border-box;
-}      
-
-
+}   
 /* General for whole site */
-main { display: flex; /*do I need this code for main??*/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    
 }
-h1 h2 h3 h4 { font-family:"Cormorant Garamond"; 
+.center {justify-content: center;
+         align-items: center;
+          margin: 0 auto;
+          padding: 0;
+    }
+
+h1 h2 h3 h4 { font-family: "Cormorant Garamond", serif;
               color: #372e2c;
 }
 h1 h2 h3 { font-weight: 100;
@@ -36,7 +33,7 @@ body { /* The body has a default margin, which we do not want interfering with i
       padding: 0;
 
       /* Text styles */
-      font-family: "Cormorant Garamond Medium";
+      font-family: "Cormorant Garamond", serif; 
       line-height: 1.42857143;
       color: #372e2c;
       letter-spacing: 0.05rem;
@@ -49,46 +46,51 @@ body { /* The body has a default margin, which we do not want interfering with i
 }
 /* index page */
 
-.header {display: flex;
-        flex-direction: column;
-        position: sticky; top: 0; /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */
+.header { position: sticky; top: 0; /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */ /*makes a sticky header*/
 }
 .banner {display: flex;
          background-color: #986b58;
-         justify-content: center;
-         align-items: center;
-         height: 40px;  
-         padding-top: 5px;                    
+         justify-content: center; 
+         align-items: center;  
+         padding: 0.5%;          
 }
-.banner h4 { color:#efe6e1; }
 
+.banner h4 { color:#efe6e1;
+             margin: 0; 
+             font-size: 1.6rem; 
+}
 
 .logonav { display: flex;
            align-items: center;
-           justify-content: space-between;
-        
            /*sizing of pink header part*/
-           height: 11vh; 
+           height: 11vh;
            background-color: #efe6e1;
+           padding-top: 1%;
+           
 }
-.logonav a { display: block;
-            padding-left: 75px;
-}
-.logonav nav { padding-right: 40px;
-               padding-top: 10px;}
-
-nav ul { display: flex;
-         font-size: 1.6rem;
-         letter-spacing: 0.1rem;
-         font-weight: 300;
-         list-style-type: none;
-         margin: 0;
-         padding: 0;
+.logonav div { display: block;
+            margin-left: 5%;
+            flex: 3 0 auto;
 }
 
-nav li a {text-decoration: none;
+.logonav_inner { display: flex;
+                 justify-content: flex-end;
+                 font-size: 1.6rem;
+                 letter-spacing: 0.1rem;
+                 font-weight: 300;
+                 list-style-type: none;
+                 padding: 0;
+               
+}
+.logonav ul { margin: 0 3% 0 0;
+             flex: 2 0 auto;
+       
+}
+.logonav li {padding-right: 5%;}
+
+.logonav li a {text-decoration: none;
           color: #372e2c;
-          display: block;
+          display: block;    
 }
 
 nav li a:hover { color: #986b58;}
@@ -106,6 +108,7 @@ nav li a:hover { color: #986b58;}
 
       /* Text styles */
        color: #efe6e1;
+       
 
       /* Background Styles */
       /* background image doesn't take colors but take gradients, 0 is full transparency in rgba, make sure to separate multiple backgrounds with commas */
@@ -117,13 +120,13 @@ nav li a:hover { color: #986b58;}
 }
 .hero h1 { /* Margins */
           margin: 0;
-          width: 820px;
-          padding-left: 75px;         
+          width: 57vw;
+          padding-left: 5%;
+          font-family: "Cormorant Garamond Medium"
 }
 .hero h3 {
-     width: 750px;
-     padding-left: 75px; 
-     padding-right: 40px;
+     width: 50vw;
+     padding-left: 5%; 
 } 
 .hero .btn { /* a elements are inline by default block fixes this */ 
             /* Positioning and sizing */
@@ -132,7 +135,7 @@ nav li a:hover { color: #986b58;}
 
             /* Padding and margins */
             padding: 12px 17px;
-            margin-left: 75px;
+            margin-left: 5%;
         
             /* Border styles */
             border: 1px solid #efe6e1;
@@ -143,11 +146,10 @@ nav li a:hover { color: #986b58;}
             text-decoration: none; /*removes line under */ 
             text-align: center;
             font-size: 1.4rem;
-            font-weight: 550;
-            font-family: "Josefin Sans";
-
-            
+            font-weight: 500;
+            font-family: "Josefin Sans", sans-serif;           
 }
+
 .hero a:hover { background-color: rgba(152,107,88,0.5);}
 
 /* 3 product types on index */
@@ -155,13 +157,9 @@ nav li a:hover { color: #986b58;}
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100vw;
-            height: 100vh;
-
-            margin: 0;
+            margin: 0 0 5% 0;
             padding: 0;
 }
-.products h2 { margin: 0 0 10px 0;}
 
 .products ul { display: flex;
                list-style-type: none;
@@ -185,16 +183,12 @@ nav li a:hover { color: #986b58;}
 
 /* video section */
 .video { display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #986b58;
-        margin: 0;
-        padding-bottom: 100px;
-        width: 100vw;   
-        height: 100vh;        
+         background-color: #986b58;
+        margin: 0; 
+        width: 80%; 
 }
-.video h2 { color: #efe6e1;
+.video h2 { text-align: center;
+            color: #efe6e1;
 }
          
 /* featured product section */                      
@@ -204,7 +198,7 @@ nav li a:hover { color: #986b58;}
                   padding: 0;
                   width: 100vw;
                   height: 50vw;
-            }
+}
 .featuredproduct a {display: block;
                     flex: 4;
                     padding-left: 40px;
@@ -221,7 +215,6 @@ nav li a:hover { color: #986b58;}
               padding: 0;
               margin: 0;
 }
-
 .featureinfo .btn { /* a elements are inline by default block fixes this */ 
                /* Positioning and sizing */
                   display: block;
