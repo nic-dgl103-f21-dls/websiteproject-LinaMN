@@ -14,7 +14,7 @@ html {font-size: 62.5%} /* so I can work with rem */
 h1 h2 h3 h4 { font-family: "Cormorant Garamond", serif;
               color: #372e2c;
 }
-h1 h2 h3 { font-weight: 100;
+h1 h2 h3 { 
 }
 h1 { font-size: 6.4rem;
      line-height: 1.2;
@@ -182,16 +182,18 @@ nav li a:hover { color: #986b58;}
 }
 
 /* video section */
+
 .video { display: flex;
          flex-direction: column;
          background-color: #986b58;
-         margin: 0;
          padding-bottom: 5%;
          justify-content: center;
-         align-items: center;
-         
+         align-items: center;      
 }
-.video div { color: #efe6e1;
+.video iframe {width: 90vw;
+height: 100vh;}
+.video h2 { color: #efe6e1;
+     
 }
          
 /* featured product section */                      
@@ -261,12 +263,12 @@ nav li a:hover { color: #986b58;}
 }
 .makers h2 { /* Margins */
           margin: 0;
-          width: 700px;
-          padding-left: 75px; 
+          width: 45vw;
+          padding-left: 5%; 
 }
-.makers h3 {width: 750px;
-     padding-left: 75px; 
-     padding-right: 40px;}
+.makers h3 {width: 55vw;
+     padding-left: 5% 
+}
 
 .makers .btn { /* a elements are inline by default block fixes this */ 
             /* Positioning and sizing */
@@ -276,7 +278,7 @@ nav li a:hover { color: #986b58;}
             /* Padding and margins */
             padding: 12px 17px;
             margin-top: 38px;
-            margin-left: 5%
+            margin-left: 5%;
 
             /* Border styles */
             border: 1px solid #efe6e1;
@@ -303,14 +305,13 @@ nav li a:hover { color: #986b58;}
                      margin: 5% 5% 5% 1%;
                    
 }
-.journal aside { margin: 8% 0% 3% 10;
+.journal aside { margin: 5% 0% 3% 5%;
      border: 1px solid #efe6e1;
-     
 }
 
 .journalinfo { display: flex;
               flex-direction: column;
-              padding: 5% 2% 10% 5%;
+              padding: 5% 2% 12.5% 5%;
               margin: 0;
 }
 
@@ -447,10 +448,6 @@ footer {display: flex;
      max-width: 850px;
      color: #372e2c
 }
-
-
-
-
 
 
 
