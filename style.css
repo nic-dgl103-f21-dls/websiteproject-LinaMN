@@ -63,10 +63,8 @@ body { /* The body has a default margin, which we do not want interfering with i
 
 .header { position: sticky; top: 0; /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */ /*makes a sticky header*/
 }
-.banner {display: flex;
+.banner {
          background-color: #986b58;
-         justify-content: center; 
-         align-items: center;  
          padding: 0.5%;          
 }
 
@@ -75,17 +73,17 @@ body { /* The body has a default margin, which we do not want interfering with i
              font-size: 1.6rem; 
 }
 
-.logonav { display: flex;
-           align-items: center;
+.logonav { 
            /*sizing of pink header part*/
            height: 11vh;
            background-color: #efe6e1;
            padding-top: 1%;
            
 }
-.logonav div { display: block;
+.logonav div { 
+              display: block;
             margin-left: 5%;
-            flex: 3 0 auto;
+            flex: 3 3 auto;
 }
 
 .logonav_inner { display: flex;
@@ -98,7 +96,7 @@ body { /* The body has a default margin, which we do not want interfering with i
                
 }
 .logonav ul { margin: 0 3% 0 0;
-             flex: 2 0 auto;
+             flex: 2 2 auto;
        
 }
 .logonav li {padding-right: 5%;}
