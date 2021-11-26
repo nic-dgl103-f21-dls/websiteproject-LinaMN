@@ -75,7 +75,7 @@ body { /* The body has a default margin, which we do not want interfering with i
          padding: 0.5%;          
 }
 
-.banner h4 { color:#efe6e1;
+.banner h4 { color: #fff;
              margin: 0; 
              font-size: 1.6rem; 
 }
@@ -83,7 +83,7 @@ body { /* The body has a default margin, which we do not want interfering with i
 .logonav { 
            /*sizing of pink header part*/
            height: 11vh;
-           background-color: #efe6e1;
+           background-color: #fff;
            padding-top: 1%;
            
 }
@@ -454,6 +454,15 @@ footer { display: flex;
 .h2 { font-size: 3rem;
        }
 
+/* Quiz Pages */
+
+/* Quiz Page 1 */
+.quiz { background-color: #efe6e1;
+     width: 100vw;
+     height: 100vh;}
+
+.quiz h2 { text-align: center;
+           max-width: 70%;}
 
             
             
