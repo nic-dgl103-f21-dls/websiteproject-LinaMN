@@ -1,4 +1,4 @@
-/* To Do: Match Picture Sized */
+/* To Do: Match Picture Sizes */
 
 /* website project farm and folk */
 
@@ -7,6 +7,15 @@
 html {font-size: 62.5%} /* so I can work with rem */
 * { box-sizing: border-box;
 }  
+hr{ /* https://codepen.io/ibrahimjabbari/pen/ozinB */
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
 img { max-width: 100%;
       height: auto;}
 
@@ -38,7 +47,7 @@ body { /* The body has a default margin, which we do not want interfering with i
       letter-spacing: 0.12rem;
       
       /*background*/
-      background-color: #fff;
+      background-color: #FEFAF4;
 }
 .columnwrap { display: flex;
               flex-direction: column;
@@ -63,6 +72,7 @@ body { /* The body has a default margin, which we do not want interfering with i
 }
 .margin {margin-right: 5%;
           margin-left: 5%;}
+.anothermargin {margin-top: 5%;}
 
 /* index page */
 
@@ -71,11 +81,11 @@ body { /* The body has a default margin, which we do not want interfering with i
 .header { position: sticky; top: 0; /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */ /*makes a sticky header*/
 }
 .banner {
-         background-color: #986b58;
+         background-color: #efe6e1;
          padding: 0.5%;          
 }
 
-.banner h4 { color: #fff;
+.banner h4 { color: #372e2c;
              margin: 0; 
              font-size: 1.6rem; 
 }
@@ -83,7 +93,7 @@ body { /* The body has a default margin, which we do not want interfering with i
 .logonav { 
            /*sizing of pink header part*/
            height: 11vh;
-           background-color: #fff;
+           background-color: #FEFAF4;
            padding-top: 1%;
            
 }
@@ -125,7 +135,7 @@ nav li a:hover { color: #986b58;}
       align-items: flex-start; /*to override class columnwrap*/
       
       /* Text styles */
-       color: #efe6e1;
+       color: #FEFAF4;
        
 
       /* Background Styles */
@@ -152,11 +162,11 @@ nav li a:hover { color: #986b58;}
             margin-left: 5%;
         
             /* Border styles */
-            border: 1px solid #efe6e1;
+            border: 1px solid #FEFAF4;
             
 
             /* Text styles */
-            color: #efe6e1;
+            color: #FEFAF4;
             text-decoration: none; /*removes line under */ 
             text-align: center;
             font-size: 1.4rem;
@@ -179,9 +189,10 @@ nav li a:hover { color: #986b58;}
                padding: 0;
                margin-left: 5%;
                margin-right: 5%;
-               margin-bottom: 5%;
+               margin-bottom: 8%;
                flex-direction: row;
                justify-content: center;
+              
 }
 .products li { max-width: 33%;
                max-height: auto;
@@ -194,24 +205,25 @@ nav li a:hover { color: #986b58;}
                  
                  
 }
-.products a:hover { color: #986b58;
+.products a:hover { color: #B22029;
 }
 
 /* video section */
 
-.video { background-color: #986b58;
-         padding-bottom: 5%;         
+.video { background-color: #FEFAF4;
+         padding-bottom: 3%;         
 }
 .video iframe {width: 90vw;
                height: 100vh;
 }
-.video h2 { color: #efe6e1;   
+.video h2 { color: #372e2c;   
 }
          
 /* featured product section */    
 
 .featuredproduct { align-items: flex-start;  
-                   justify-content: center;                                                              
+                   justify-content: center; 
+                   background-color: #FEFAF4;                                                             
 }
 .featuredproduct h2 {margin: 0;}
 .featuredproduct div { width: 50%;
@@ -240,10 +252,10 @@ nav li a:hover { color: #986b58;}
                   
                   /* Border styles */
                  
-                 background-color: #efe6e1;
+                 background-color: #372e2c;
                  
                  /* Text styles */
-                 color: #372e2c;
+                 color: #fff;
                  text-decoration: none; /*removes line under */ 
                  text-align: center;
                  font-size: 1.4rem;
@@ -290,11 +302,11 @@ nav li a:hover { color: #986b58;}
             
 
             /* Border styles */
-            border: 1px solid #efe6e1;
+            border: 1px solid #fff9f2;
             
 
             /* Text styles */
-            color: #efe6e1;
+            color: #fff9f2;
             text-decoration: none; /*removes line under */ 
             text-align: center;
             font-size: 1.4rem;
@@ -337,10 +349,10 @@ nav li a:hover { color: #986b58;}
                   
                   /* Border styles */
                  
-                 background-color: #efe6e1;
+                 background-color: #372e2c;
                  
                  /* Text styles */
-                 color: #372e2c;
+                 color: #fff;
                  text-decoration: none; /*removes line under */ 
                  text-align: center;
                  font-size: 1.4rem;
@@ -353,7 +365,8 @@ nav li a:hover { color: #986b58;}
 
 footer { display: flex;
          font-size: 1.4;
-         background-color: #EFE6E1;
+         background-color: #986b58;
+         color: #fff;
          width: 100vw;
          height: 15vh;
          letter-spacing: 0.1rem
@@ -397,7 +410,7 @@ footer { display: flex;
            /*change the image here */
            background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("images/friends.JPG");
 }
-.color {background-color: #EFE6E1;} /*background color for page */
+.color {background-color: #fff9f2;} /*background color for page */
 
 .firstimage h2 { text-align: center;
      max-width: 550px;
@@ -470,7 +483,7 @@ footer { display: flex;
     width: 200px;
     
     /* Padding and margins */
-    padding: 1em;
+    padding: 1% 2%;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -482,6 +495,7 @@ footer { display: flex;
     font-size: 1.4rem;
     font-weight: 550;
     font-family: "Josefin Sans";
+    color: #372e2c;
     
     /* Border styles */
     border: 1px solid #372e2c;
