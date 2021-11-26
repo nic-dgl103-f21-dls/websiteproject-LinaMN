@@ -464,6 +464,29 @@ footer { display: flex;
 .quiz h2 { text-align: center;
            max-width: 70%;}
 
+.quiz .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 550;
+    font-family: "Josefin Sans";
+    
+    /* Border styles */
+    border: 1px solid #372e2c;
+}
+
             
             
             
