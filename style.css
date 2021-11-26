@@ -1,10 +1,15 @@
+/* To Do: Match Picture Sized */
+
 /* website project farm and folk */
 
 /* General for whole site */
 
 html {font-size: 62.5%} /* so I can work with rem */
 * { box-sizing: border-box;
-}   
+}  
+img { max-width: 100%;
+      height: auto;}
+
 h1 h2 h3 h4 { font-family: "Cormorant Garamond", serif;
               color: #372e2c;
 }
@@ -163,27 +168,31 @@ nav li a:hover { color: #986b58;}
 
 /* 3 product types section */
 
-.products { margin: 0 0 5% 0;
-            
-}
 
-.products ul { display: flex;
+
+.products      { display: flex;
                list-style-type: none;
-               font-size: 1.7rem;
+               font-size: 2rem;
                font-weight: 300;
                letter-spacing: 0.1rem;
                margin: 0;
                padding: 0;
-               justify-content: space-evenly;
-               flex-wrap: wrap;
-               
-               
+               margin-left: 5%;
+               margin-right: 5%;
+               margin-bottom: 5%;
+               flex-direction: row;
+               justify-content: center;
 }
+.products li { max-width: 33%;
+               max-height: auto;
+               padding-right: 2%;}
 .products li a { text-decoration: none; /*removes line for link*/ 
                  display: block; 
                  color: #372e2c;
                  text-align: center;
-                 padding: 10px;
+                 margin: 0;
+                 
+                 
 }
 .products a:hover { color: #986b58;
 }
@@ -201,19 +210,20 @@ nav li a:hover { color: #986b58;}
          
 /* featured product section */    
 
-.featuredproduct { align-items: flex-start; 
-                   max-width: fit-content;                                             
+.featuredproduct { align-items: flex-start;  
+                   justify-content: center;                                                              
 }
-.featuredproduct div {display: block;
-                     margin: 5% 1% 5% 5%;
-                   
+.featuredproduct h2 {margin: 0;}
+.featuredproduct div { width: 50%;
+                      display: block;
+                      margin: 5% 1% 5% 5%;                
 }
-.featuredproduct aside { margin: 5% 5% 5% 0;
-     border: 1px solid #efe6e1;
-    }
+.featuredproduct aside { width: 50%;
+     margin: 5% 5% 5% 0;
+}
 
 .featureinfo { align-items: flex-start;
-              padding: 0 5% 12.5% 2%;
+              padding: 0% 8% 11.3% 1%;
               margin: 0;
               
               
@@ -302,17 +312,19 @@ nav li a:hover { color: #986b58;}
 }
 .journal div { display: block;
                margin: 5% 5% 5% 1%;
+               width: 50%;
                      
 }
 .journal aside { margin: 5% 0% 3% 5%;
-     border: 1px solid #efe6e1;
-     
+                 width: 50%;    
 }
 .journalinfo { display: flex;
               flex-direction: column;
-              padding: 5% 2% 12.5% 5%;
+              padding: 0% 2% 12% 5%;
               margin: 0;
 }
+.journalinfo h2 {margin: 0;}
+
 .journalinfo .btn { /* a elements are inline by default block fixes this */ 
                /* Positioning and sizing */
                   display: block;
@@ -437,7 +449,8 @@ footer { display: flex;
                      background-color: #986b58;  
                      height: 650px;
 }    
-.h2 { font-size: 3rem;}
+.h2 { font-size: 3rem;
+       }
 
 
             
