@@ -1,0 +1,37 @@
+/* Followed youtube tutorial at https://youtu.be/xNtT8NGinxU */
+
+.checkbox { display: inline-flex; /* moves word beside check box */
+             align-items: center; /* centers word to check box */
+             cursor: pointer; /* allows customer cursor little hand */
+            } 
+
+.checkbox__input {display: none;} /* hides original checkbox style */
+
+.checkbox__box {
+width: 1.25em;
+height: 1.25em; /* em means relative to font size */
+border: 1px solid #372e2c;
+border-radius: 1px; /*rounded edges */
+display: flex;
+align-items: center;
+justify-content: center; /*these last 3 itmes align check mark symbol */
+margin-right: 10px;
+flex-shrink: 0;
+transition: background 0.15s, border-color 0.15s;
+
+
+/*prevents box from shrinking with font and lose perfect square */
+}
+
+.checkbox__box::after { content: '\2714'; 
+  color: #fff;  
+  transform: scale(0);  
+  transition: transform 0.15s;
+}
+
+.checkbox__input:checked + .checkbox__box { background-color: #986b58;
+border-color: #986b58;}
+
+.checkbox__input:checked + .checkbox__box::after {
+    transform: scale(1);
+}

@@ -5,8 +5,12 @@
     <title>Quiz Page Website Project</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkbox.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <style>
+        .check_box {margin-right: 10px;}
+    </style>
 </head>
 
 <body>
@@ -30,20 +34,39 @@
         </nav>
     </header>
     <main>
-    <div class="container">
+    <div class="container columnwrap">
         <h3>TOOL QUIZ &mdash; 1 OF 4</h3>
         <div class="border">
-            <div class="grey" style="height:24px;width:25%"></div>
+            <div class="brown" style="height:20px;width:25%"></div>
         </div>
     </div>
-    <form class="quiz columnwrap">
-        <h2>Are you more interested in using Farm &amp; Folk soap on your face or body?</h2>
-        <input type="checkbox" name="Face" id="Face" value="yes">Face<br>
-        <input type="checkbox" name="Body" id="Body" value="yes">Body<br>
-        <input type="checkbox" name="Both" id="Both" value="yes">Both
-        <a href="quiz.html" class="btn">Back</a>
-        <a href="quiz3.html" class="btn">Next</a>
+    <section class="quiz quizstart">
+    <form class="columnwrap center">
+        <h1>Are you more interested in using Farm &amp; Folk soap on your face or body?</h1>
+        <label class="checkbox" for="Face">
+            <input class="checkbox__input" type="checkbox" name="Face" id="Face" value="yes">
+           <div class="checkbox__box">
+           </div>
+           Face
+        </label>
+        <label class="checkbox" for="Body">
+            <input class="checkbox__input" type="checkbox" name="Body" id="Body" value="yes">
+            <div class="checkbox__box">
+            </div>
+            Body
+        </label>
+        <label class="checkbox" for="Both">
+            <input class="checkbox__input" type="checkbox" name="Both" id="Both" value="yes">
+            <div class="checkbox__box">
+            </div>
+            Both
+        </label>
     </form>
+    <div class="wrap">
+        <a href="quiz.html" class="btn">BACK</a>
+        <a href="quiz3.html" class="btn">NEXT</a>
+    </div>
+    </section>
     </main>
     <footer class="foot">
         <div class="wrap">
