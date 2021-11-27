@@ -471,16 +471,12 @@ footer { display: flex;
 
 /* Quiz Page 1 */
 .quiz { background-color: #efe6e1;
-     width: 100vw;
-     height: 100vh;}
-
-.quizstart {justify-content: flex-start;
-            }
+height: 100vh;}
 
 .quiz h1 { max-width: 75%;
            font-weight: 100;
-          margin: 0 0 5% 0;}
-.quizstart h1 { padding-top: 5%;}
+          margin: 0;}
+.quizstart h1 { padding-top: 6%;}
 
 .quiz .btn { /* a elements are inline by default block fixes this */ 
             /* Positioning and sizing */
@@ -503,9 +499,6 @@ footer { display: flex;
             font-weight: 500;
             font-family: "Josefin Sans", sans-serif;           
 }
-.quiz div { margin: 0;
-justify-content: space-between;}
-
 .container {display: flex;
 flex-direction: column;
 justify-content: center;
@@ -524,9 +517,42 @@ background-color: #efe6e1;}
 
 .quiz a:hover { color: #FEFAF4;
                  background-color: #372e2c;}
-
+.button {justify-content: space-between;
+     align-items: flex-start;
+margin: 0;}
  
+form { display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
 
+form label { margin: 5%;}
+
+.quiz .btnalt { /* a elements are inline by default block fixes this */ 
+            /* Positioning and sizing */
+            display: block;
+            width: 200px;
+
+            /* Padding and margins */
+            padding: 1% 1%;
+            margin: 4% 13%;
+        
+            /* Border styles */
+            border: 1px solid #372e2c;
+            
+
+            /* Text styles */
+            color: #372e2c;
+            text-decoration: none; /*removes line under */ 
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-family: "Josefin Sans", sans-serif;           
+}
+
+#buttonsolid {background-color: #372e2c;
+              color: #FEFAF4;}
             
             
             

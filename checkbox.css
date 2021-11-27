@@ -1,5 +1,10 @@
-/* Followed youtube tutorial at https://youtu.be/xNtT8NGinxU */
 
+/* Followed youtube tutorial but added a bunch of my own code to sytle it the way I like it at https://youtu.be/xNtT8NGinxU */
+
+
+html {font-size: 62.5%} /* so I can work with rem */
+* { box-sizing: border-box;
+} 
 .checkbox { display: inline-flex; /* moves word beside check box */
              align-items: center; /* centers word to check box */
              cursor: pointer; /* allows customer cursor little hand */
@@ -8,19 +13,17 @@
 .checkbox__input {display: none;} /* hides original checkbox style */
 
 .checkbox__box {
-width: 1.25em;
-height: 1.25em; /* em means relative to font size */
-border: 1px solid #372e2c;
-border-radius: 1px; /*rounded edges */
+width: 1.75em;
+height: 1.75em; /* em means relative to font size */
+border: 3px solid #372e2c; /*my own code*/
+border-radius: 2px; /*rounded edges*/
 display: flex;
 align-items: center;
 justify-content: center; /*these last 3 itmes align check mark symbol */
-margin-right: 10px;
-flex-shrink: 0;
+flex-shrink: 0; /*prevents box from shrinking with font and lose perfect square */
 transition: background 0.15s, border-color 0.15s;
+padding-left: 4.5px;
 
-
-/*prevents box from shrinking with font and lose perfect square */
 }
 
 .checkbox__box::after { content: '\2714'; 
@@ -29,9 +32,15 @@ transition: background 0.15s, border-color 0.15s;
   transition: transform 0.15s;
 }
 
-.checkbox__input:checked + .checkbox__box { background-color: #986b58;
-border-color: #986b58;}
+.checkbox__input:checked + .checkbox__box { 
+background-color: #996b5996;
+border-color: #986b58;
+border-style: double;}
 
 .checkbox__input:checked + .checkbox__box::after {
     transform: scale(1);
 }
+
+.checkbox h2 {margin-left: 10px;
+font-weight: 100;
+font-size: 5rem;}
