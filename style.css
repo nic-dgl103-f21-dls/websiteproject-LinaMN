@@ -81,11 +81,11 @@ body { /* The body has a default margin, which we do not want interfering with i
 .header { position: sticky; top: 0; /* https://dev.to/akhilarjun/one-line-sticky-header-using-css-5gp3 */ /*makes a sticky header*/
 }
 .banner {
-         background-color: #efe6e1;
+         background-color: #986b58;
          padding: 0.5%;          
 }
 
-.banner h4 { color: #372e2c;
+.banner h4 { color: #fff;
              margin: 0; 
              font-size: 1.6rem; 
 }
@@ -500,6 +500,15 @@ footer { display: flex;
     /* Border styles */
     border: 1px solid #372e2c;
 }
+.container {display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #efe6e1;}
+.border {border: 3px solid #8c8b8b;
+         width: 50%;
+          }
+.grey {background-color: #8c8b8b;}
 
             
             
