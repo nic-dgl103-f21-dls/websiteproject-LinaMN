@@ -207,38 +207,39 @@ nav li a:hover { color: #986b58;}
 
 /* video section */
 
-.video { background-color: #AD8776;       
+.video { background-color: #986b58;       
 }
 .video iframe {width: 90vw;
                height: 100vh;
 }
 .video h2 { color: #FEFAF4; 
      padding-top: 2%;
-     margin: 0;  
+     margin: 0; 
+     text-align: center; 
 }
 
          
 /* featured product section */    
 
-.featuredproduct { 
-                   justify-content: center; 
-                   align-items: flex-start
+.featuredproduct { margin: 5%;
                    background-color: #FEFAF4;                                                             
 }
 .featuredproduct h2 {margin: 0;}
 .featuredproduct div { width: 50%;
                       display: block;
-                      margin: 5% 0 5% 5%; 
                       padding: 0;               
 }
 .featuredproduct aside { width: 50%;
-     margin: 5% 10% 5% 2%;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     margin-left: 5%;
+
      
 }
 
 .featureinfo { display: flex;
      flex-direction: column;
-     justify-content: center;
       
 }
 
@@ -249,8 +250,8 @@ nav li a:hover { color: #986b58;}
 
                   /* Padding and margins */
                   padding: 15px 17px;
-                  margin-top: 20px;
-                  margin-bottom: 20px;
+                  margin-top: 2%;
+                  margin-bottom: 3%;
                   
                   /* Border styles */
                  
@@ -321,21 +322,23 @@ nav li a:hover { color: #986b58;}
 /* Donation Feature -Would lead to Journal if there was one*/
 
 .journal { display: flex;
-           align-items: flex-start; 
+           align-items: center;
            justify-content: center; 
-           flex-direction: row-reverse;                            
+           flex-direction: row-reverse;  
+           margin: 5%;    
+           text-align: center;                      
 }
 .journal div { display: block;
-               margin: 5% 5% 5% 1%;
                width: 50%;
                      
 }
-.journal aside { margin: 5% 0% 3% 5%;
+.journal aside { margin-right: 5%;
                  width: 50%;    
 }
 .journalinfo { display: flex;
               flex-direction: column;
-              padding: 0% 2% 12% 5%;
+              align-items: center;
+              justify-content: center;
               margin: 0;
 }
 .journalinfo h2 {margin: 0;}
@@ -352,7 +355,7 @@ nav li a:hover { color: #986b58;}
                   
                   /* Border styles */
                  
-                 background-color: #372e2c;
+                 background-color: #986b58;
                  
                  /* Text styles */
                  color: #fff;
@@ -372,7 +375,8 @@ footer { display: flex;
          color: #fff;
          width: 100vw;
          height: 15vh;
-         letter-spacing: 0.1rem
+         letter-spacing: 0.1rem;
+         text-align: center;
 }     
 
 /* Shop Page */
@@ -388,6 +392,10 @@ footer { display: flex;
                justify-content: space-evenly;
                flex-wrap: wrap;
                
+}
+.shop li {max-width: 33%;
+               max-height: auto;
+               padding-right: 2%;
 }
 .shop li a {     text-decoration: none; /*removes line for link*/ 
                  display: block; 

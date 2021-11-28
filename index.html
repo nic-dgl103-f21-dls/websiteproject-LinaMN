@@ -3,10 +3,71 @@
  <head>	
      <title>Home Page Website Project</title>
      <meta charset="utf-8"> 
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+         @media only screen and (max-width: 1000px) {.video iframe {width:  90vw; height: 80vh;}}
+         @media only screen and (max-width: 765px) 
+         {
+        .video iframe {width:  90vw; height: 60vh;}
+        .featureinfo p {display: none;}
+        .journalinfo p {display: none;}   
+        nav .toggle {
+  }  
+    }
+    @media only screen and (max-width: 500px) {
+        .video iframe {width:  90vw; height: 40vh;}
+        .products {flex-direction: column;}
+        .products li {max-width: 100%;
+        margin-bottom: 1%;}
+        .hero {align-items: center;
+            text-align: center;}
+        .hero h3 {display: none;}
+        .hero h1 {padding-bottom: 3%;}
+        .featuredproduct { display: none;}
+        .journal {flex-direction: column;}
+        .journal div {width: 100%;}
+        .journalinfo { padding: 0 5%;}
+        .journal h3 { display: none;}
+        .banner {display: none;}
+        .makers {align-items: center;
+        text-align: center;}
+        }    
+
+    @media only screen and (max-width: 778px) {     
+.logonav_inner {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: none;
+  background-color: #372e2c;
+  text-align: center;
+}
+.logonav_inner li a {color: white;}
+.logonav  {display: flex;
+    flex-direction: column;
+padding-left: 5%;
+padding-top: 3%;
+               align-items: flex-start;
+            font-weight: bold;
+    }
+.show-items {
+  display: flex;
+}
+        .logonav .toggle {
+  align-self: flex-end;
+  justify-content:flex-end;
+  position: absolute;
+  cursor: pointer;
+  padding-top: 3%;
+  padding-right: 5%;
+}
+}
+     </style>
  </head> <!--included some google fonts-->
 
  <body>
@@ -17,12 +78,13 @@
          <nav class="logonav wrap"> <!--logo and nav side by side flex-->
              <div><a href="index.html"><img src="images/logo.png" alt="Farm and Folk logl" width="300"></a>
             </div>
-             <ul class="logonav_inner"> 
+             <ul class="logonav_inner" id="nav-items"> 
                  <li><a href="index.html">HOME</a></li>
                  <li><a href="about.html">ABOUT</a></li>
                  <li><a href="shop.html">SHOP</a></li>
                  <li><a href="quiz.html">SOAP QUIZ</a></li>
-             </ul>  
+             </ul> 
+            <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
          </nav>
      </header>
     
@@ -48,10 +110,10 @@
          </section>
          <section class="featuredproduct wrap"><!--featured product this is for horizontal figure and aside-->
             <div><a href="shop.html">
-                 <img src="images/bread.jpg" alt="bar of thieves soap">
+                 <img src="soap/lavcropped.jpg" alt="bar of thieves soap">
                   </a></div>
              <aside class="featureinfo">
-                     <h2>Thieves Natural Soap</h2>
+                     <h2> Lavender Shea Butter Natural Soap</h2>
                      <h3>$14</h3>
                      <h3>Quantitiy</h3> <!--add number selection-->
                      <a href="shop.html" class="btn">BUY NOW</a>
@@ -64,7 +126,7 @@
              <a href="about.html" class="btn">LEARN MORE</a>
          </section>
          <section class="journal">
-            <div><a href="journal.html"><img src="images/bread.jpg" alt="child holding muffin"></a></div>
+            <div><a href="journal.html"><img src="images/breadcropped.jpg" alt="child holding muffin"></a></div>
             <!--should lead to journal page-->
              <aside class="journalinfo">
                  <h2>We Support Nourish Cowichan</h2>
@@ -82,7 +144,13 @@
       </main> 
       <footer class="foot">
         <div class="wrap"><p>© FARM & FOLK | All Rights Reserved | Cowichan Station, British Columbia | 250.510.6701 | hello@farmandfolk.ca |</p></div>
-      </footer>  
+      </footer> 
+      <script>
+        function showNav() {
+            var element = document.getElementById("nav-items");
+            element.classList.toggle("show-items");
+        }
+    </script> 
  </body>
 </html>
 
