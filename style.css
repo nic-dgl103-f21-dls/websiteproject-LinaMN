@@ -7,19 +7,13 @@
 html {font-size: 62.5%} /* so I can work with rem */
 * { box-sizing: border-box;
 }  
-hr{ /* https://codepen.io/ibrahimjabbari/pen/ozinB */
-  border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-}
+
+
 
 img { max-width: 100%;
       height: auto;}
 
-h1 h2 h3 h4 { font-family: "Cormorant Garamond", serif;
+h1,h2,h3,h4 { font-family: "Cormorant Garamond", serif;
               color: #372e2c;
 }
 h1 { font-size: 6.4rem;
@@ -62,6 +56,7 @@ body { /* The body has a default margin, which we do not want interfering with i
              justify-content: center;
              align-items: center;
              margin: 0 auto;
+          
            
 }
 .background {
@@ -70,6 +65,7 @@ body { /* The body has a default margin, which we do not want interfering with i
       background-repeat: no-repeat;
       background-attachment: fixed;
 }
+
 .margin {margin-right: 5%;
           margin-left: 5%;}
 .anothermargin {margin-top: 5%;}
@@ -145,12 +141,13 @@ nav li a:hover { color: #986b58;}
 }
 .hero h1 { /* margins */
           margin: 0;
-          width: 57vw;
           padding-left: 5%;
+          color: #FEFAF4;
+          font-weight: 200;
 }
 .hero h3 {
-     width: 50vw;
      padding-left: 5%; 
+     color: #FEFAF4;
 } 
 .hero .btn { /* a elements are inline by default block fixes this */ 
             /* Positioning and sizing */
@@ -210,36 +207,41 @@ nav li a:hover { color: #986b58;}
 
 /* video section */
 
-.video { background-color: #FEFAF4;
-         padding-bottom: 3%;         
+.video { background-color: #AD8776;       
 }
 .video iframe {width: 90vw;
                height: 100vh;
 }
-.video h2 { color: #372e2c;   
+.video h2 { color: #FEFAF4; 
+     padding-top: 2%;
+     margin: 0;  
 }
+
          
 /* featured product section */    
 
-.featuredproduct { align-items: flex-start;  
+.featuredproduct { 
                    justify-content: center; 
+                   align-items: flex-start
                    background-color: #FEFAF4;                                                             
 }
 .featuredproduct h2 {margin: 0;}
 .featuredproduct div { width: 50%;
                       display: block;
-                      margin: 5% 1% 5% 5%;                
+                      margin: 5% 0 5% 5%; 
+                      padding: 0;               
 }
 .featuredproduct aside { width: 50%;
-     margin: 5% 5% 5% 0;
+     margin: 5% 10% 5% 2%;
+     
 }
 
-.featureinfo { align-items: flex-start;
-              padding: 0% 8% 11.3% 1%;
-              margin: 0;
-              
-              
+.featureinfo { display: flex;
+     flex-direction: column;
+     justify-content: center;
+      
 }
+
 .featureinfo .btn { /* a elements are inline by default block fixes this */ 
                /* Positioning and sizing */
                   display: block;
@@ -252,7 +254,7 @@ nav li a:hover { color: #986b58;}
                   
                   /* Border styles */
                  
-                 background-color: #372e2c;
+                 background-color: #986b58;
                  
                  /* Text styles */
                  color: #fff;
@@ -275,7 +277,7 @@ nav li a:hover { color: #986b58;}
       
 
       /* Text styles make all lines centered */
-       color: #efe6e1;
+       color: #FEFAF4;
 
       /* Background Styles */
       /* background image doesn't take colors but take gradients, 0 is full transparency in rgba, make sure to separate multiple backgrounds with commas */
@@ -283,10 +285,11 @@ nav li a:hover { color: #986b58;}
 }
 .makers h2 { /* Margins */
           margin: 0;
-          width: 45vw;
           padding-left: 5%; 
+          color: #FEFAF4;
+
 }
-.makers h3 {width: 55vw;
+.makers h3 {color: #FEFAF4;
      padding-left: 5% 
 }
 
@@ -410,7 +413,7 @@ footer { display: flex;
            /*change the image here */
            background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("images/friends.JPG");
 }
-.color {background-color: #fff9f2;} /*background color for page */
+.color {background-color: #fff9f2;} /* Maybe move to top so I can use again!!!! background color for page */
 
 .firstimage h2 { text-align: center;
      max-width: 550px;
@@ -419,59 +422,52 @@ footer { display: flex;
 }
 .about  {         
                   margin-top:  3%;
-                  margin-bottom: 3%;
+                  margin-bottom: 5%;
                   align-items: flex-start;
                   color: #efe6e1;
+                  height: 100%;
 }
-.about div { 
-     padding-left: 4%;
-     width: 50%;
+
+.pic {width: 50vw;
+      height: 80vh; 
+      background-image: url("images/applefarm.JPG");
+      background-attachment: scroll;
 }
-.about .inner_about { flex: 5 1 auto;
+
+     
+.about .inner_about { display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      height: 80vh;
                       width: 50%;
-                        padding: 5%;
-                        padding-bottom: 4.8%;
-                        margin-left: 1%;
-                        margin-right: 4%;
-                     background-color: #986b58;  
-                     height: auto;
-                     justify-content: center;
+                     padding: 0 5%;
+                     background-color: #986b58;
+                     
 }    
-.aboutreverse  { display: flex;
-                  align-items: center;
-                  margin-top:  3%;
-                  padding: 0;
-                  width: 100%;
-                  height: 40%;
-                  justify-content: center;
-                  align-items: flex-start;
-                  color: #efe6e1;
-                 
-                  
-            }
-.aboutreverse div {/*this is the image on the rigtht woman with soap */
-                    width: 50%;
-                    padding-right: 4%;
-                    height: 25%%;
 
+.inner_about h2 {margin: 0;
+color: #FEFAF4;}
+.inner_about p {font-weight: 400;}
 
+                    
+.pic2 {width: 50vw;
+      height: 80vh; 
+      background-image: url("images/linen.JPG");
+      background-attachment: scroll;
 }
-.aboutreverse .inner_aboutreverse  {
-                        padding: 5%;
-                        padding-bottom: 4.8%;
-                        margin-right: 1%;
-                        margin-left: 4%;
-                     background-color: #986b58;  
-                     width: 50%;
-}    
-.h2 { font-size: 3rem;
-       }
 
+/* Font changes for center quote "We Believe..."*/   
+.h2 { font-size: 2.7rem;
+       margin: 0 0 3% 0;
+       font-weight: 100;}
+.about_footer {background-color: #FEFAF4;
+                color: #372e2c;}
 /* Quiz Pages */
 
 /* Quiz Page 1 */
 .quiz { background-color: #efe6e1;
-height: 100vh;}
+height: 100vh;
+padding: 0;}
 
 .quiz h1 { max-width: 75%;
            font-weight: 100;
@@ -553,6 +549,37 @@ form label { margin: 5%;}
 
 #buttonsolid {background-color: #372e2c;
               color: #FEFAF4;}
-            
+
+.email {display: flex;
+margin: 0;
+flex-direction: row;
+}
+
+/* the email and submit button together*/
+.email label { margin: 5% 0 0 0;
+     padding: 3px;
+}
+
+/*the email input */
+.emailintake {
+  padding: 10px 120px 10px 5px;
+  border: 1px solid #8c8b8b;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
+/*the submit input*/
+.submit { 
+padding: 10px 20px;
+border: 1px solid #372e2c;
+border-radius: 4px;
+color: #FEFAF4;
+background-color: #372e2c;
+font-family: "Josefin Sans", sans-serif;  
+font-size: 1.6rem; 
+
+}
+
+      
+
             
             

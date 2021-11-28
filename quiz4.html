@@ -5,8 +5,14 @@
     <title>Quiz Page Website Project</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkbox.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <style>
+        .check_box {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,15 +35,50 @@
             </ul>
         </nav>
     </header>
-    <form class="quiz columnwrap">
-        <h2>What kind of scents do you enjoy?</h2>
-        <input type="checkbox" name="Earthy" id="Earthy" value="yes">Earthy<br>
-        <input type="checkbox" name="Floral" id="Floral" value="yes">Floral<br>
-        <input type="checkbox" name="Citrus" id="Citrus" value="yes">Citrus<br>
-        <input type="checkbox" name="Mint" id="Mint" value="yes">Mint
-        <a href="quiz3.html" class="btn">Back</a>
-        <a href="quiz5.html" class="btn">Next</a>
-    </form>
+    <main>
+        <div class="container columnwrap">
+            <h3>SOAP QUIZ &mdash; 3 OF 4</h3>
+            <div class="border">
+                <div class="brown" style="height:20px;width:75%"></div>
+            </div>
+        </div>
+        <section class="quiz quizstart">
+            <form class="center" name="soapquiz" method="post" id="soapquiz"
+                action="https://learndigital.dev/programs/dgl103-form.php">
+                <h1>What scents do you enjoy?</h1>
+                <div class="wrap">
+                    <label class="checkbox" for="Earthy">
+                        <input class="checkbox__input" type="checkbox" name="Earthy" id="Earthy" value="yes">
+                        <div class="checkbox__box">
+                        </div>
+                        <h2>Earthy</h2>
+                    </label>
+                    <label class="checkbox" for="Floral">
+                        <input class="checkbox__input" type="checkbox" name="Floral" id="Floral" value="yes">
+                        <div class="checkbox__box">
+                        </div>
+                        <h2>Floral</h2>
+                    </label>
+                    <label class="checkbox" for="Citrus">
+                        <input class="checkbox__input" type="checkbox" name="Citrus" id="Citrus" value="yes">
+                        <div class="checkbox__box">
+                        </div>
+                        <h2>Citrus</h2>
+                    </label>
+                    <label class="checkbox" for="Mint">
+                        <input class="checkbox__input" type="checkbox" name="Mint" id="Mint" value="yes">
+                        <div class="checkbox__box">
+                        </div>
+                        <h2>Mint</h2>
+                    </label>
+                </div>
+            </form>
+            <div class="button wrap">
+                <a href="quiz3.html" class="btnalt">BACK</a>
+                <a href="quiz5.html" class="btnalt" id="buttonsolid">NEXT</a>
+            </div>
+        </section>
+    </main>
     <footer class="foot">
         <div class="wrap">
             <p>© FARM & FOLK | All Rights Reserved | Cowichan Station, British Columbia | 250.510.6701 |
