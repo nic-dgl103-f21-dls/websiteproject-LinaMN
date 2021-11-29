@@ -5,8 +5,11 @@
  <meta charset="utf-8">
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="checkbox.css"> <!--check box style sheet-->
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Josefin+Sans&display=swap"
+    rel="stylesheet">
 </head>
  <body> 
      <header class="header">
@@ -38,17 +41,17 @@
              <div class="wrap">
                  <label class="checkbox" for="Face">
                       <input class="checkbox__input" type="checkbox" name="Face" id="Face" value="yes">
-                     <div class="checkbox__box"></div> <!--empty for check box in css psuedo class-->
-                     <h2>Face</h2></label>
+                     <span class="checkbox__box"></span> <!--empty for check box in css psuedo class-->
+                     <span class="fontsize">Face</span></label>
              <label class="checkbox" for="Body">
                  <input class="checkbox__input" type="checkbox" name="Body" id="Body" value="yes"> 
-                 <div class="checkbox__box"></div>
-                 <h2>Body</h2>
+                 <span class="checkbox__box"></span>
+                 <span class="fontsize">Body</span>
              </label>
              <label class="checkbox" for="Both">
                  <input class="checkbox__input" type="checkbox" name="Both" id="Both" value="yes">
-                 <div class="checkbox__box"></div>
-                 <h2>Both</h2>
+                 <span class="checkbox__box"></span>
+                 <span class="fontsize">Both</span>
                  </label>
                  </div>
              </form>
