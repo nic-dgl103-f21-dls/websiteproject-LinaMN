@@ -395,7 +395,7 @@ footer { display: flex;
 }
 .shop li {     max-width: 33%; /*responsive sizing of pictures*/
                max-height: auto;
-               padding-right: 2%;
+               padding-right: 1%;
 }
 .shop li a {    /*styles of linked subheadings under pictures*/
                  text-decoration: none; /*removes line for link*/ 
@@ -566,8 +566,7 @@ form label { margin: 5%;}
             font-family: "Josefin Sans", sans-serif;           
 }
 #buttonsolid {background-color: #372e2c;
-              color: #FEFAF4;
-}
+              color: #FEFAF4;}
 /*for quiz 5 email section */
 .email {display: flex;
 margin: 0;

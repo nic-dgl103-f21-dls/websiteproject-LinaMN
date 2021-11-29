@@ -22,8 +22,9 @@ cursor: pointer; /* allows customer cursor little hand */
  align-items: center;
  justify-content: center; /* video said these last 3 itmes align check mark symbol*/
  flex-shrink: 0; /*prevents box from shrinking with font and lose perfect square */
-  padding-left: 4.5px;
-transition: background 0.15s, border-color 0.15s; /*delay in color for fun effect */
+ padding-left: 4.5px;
+ transition: background 0.15s, border-color 0.15s; /*delay in color for fun effect */
+ margin-right: 10px;
 }
 
 .checkbox__box::after { content: '\2714'; /*this is the code for the check mark*/
@@ -46,4 +47,5 @@ transition: background 0.15s, border-color 0.15s; /*delay in color for fun effec
  font-weight: 100;
  font-size: 5rem;
 }
+
 
