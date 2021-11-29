@@ -567,15 +567,15 @@ form label { margin: 5%;}
             font-weight: 500;
             font-family: "Josefin Sans", sans-serif;           
 }
-#buttonsolid {background-color: #372e2c;
-              color: #FEFAF4;}
+#buttonsolid { /*black color background for next button */
+background-color: #372e2c;
+color: #FEFAF4;
+}
 /*for quiz 5 email section */
+
 .email {display: flex;
-margin: 0 0 0 0;
 flex-direction: row;
 }
-.emailpadding {padding-top: 0;}
-
 /* the email and submit button together*/
 .email label { margin: 0;
      padding: 3px;
@@ -599,40 +599,37 @@ font-family: "Josefin Sans", sans-serif;
 font-size: 1.6rem; 
 margin: 1% 0;
 }
-.comments { /*comments input */
-width: 100%;
-margin-bottom: 1%;
+.comments { /* heading over comments */
 text-align: center;
+margin: 2% 0 0 0;
 }
+/*text styles over comment box*/
+.comments h2 {font-weight: 100;
+font-size: 3rem;}
+
 /*inner comment box*/
 #comments {font-family: "Cormorant Garamond", serif; 
 border: 1px solid #8c8b8b;
 border-radius: 4px;
-font-size: 1.6rem; 
+font-size: 1.7rem; 
 width: 50%;
 color: #8c8b8b;
-height: 1%;
 padding-top: 1%;
 padding-left: 1%;
 }
 /*text above email input*/
-.emailpadding { display: flex;
-     flex-direction: column;
-     width: 100%;
-align-items: center;
-text-align: center;
-padding-top: 5%;
-width: 900px;
+.emailpadding { 
+  display: flex;
+flex-direction: column;
+ width: 100%;
+ align-items: center;
+ text-align: center;
+ padding-top: 5%;
+ width: 1200px;
 }
 .emailpadding p {color: #8c8b8b;}
 
-/*text above comment input*/
-.marginless {margin: 2% 0 0 0;
-font-weight: 100;
-font-size: 2rem;
-color: #372e2c;
-} /*to space out the comment section on quiz 5 because I added it in last and it's a bit wonky */
-   
+
 
             
             
