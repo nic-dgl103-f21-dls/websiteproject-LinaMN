@@ -1,0 +1,88 @@
+ html {font-size: 62.5%} /* so I can work with rem */
+* { box-sizing: border-box;
+}  
+
+ @media only screen and (min-width:769px) {.logonav .toggle {display: none;}
+       .logosize { width: 300px;} } 
+ @media only screen and (max-width: 1000px) {.video iframe {width:  90vw; height: 80vh;}
+        }
+         @media only screen and (max-width: 768px) 
+         {
+        .video iframe {width:  90vw; height: 60vh;}
+        .featureinfo p {display: none;}
+        .journalinfo p {display: none;}   
+        .banner {display: none;}
+        .logosize {width: 300px;}
+    }
+    @media only screen and (max-width: 500px) {
+        .video iframe {width:  90vw; height: 50vh;}
+        .products {flex-direction: column;}
+        .products li {max-width: 100%;
+        margin-bottom: 1%;}
+        .hero {align-items: center;
+            text-align: center;}
+        .hero h3 {display: none;}
+        .hero h1 {padding-bottom: 3%;}
+        .featuredproduct { display: none;}
+        .journal {flex-direction: column;}
+        .journal div {width: 100%;}
+        .journalinfo { padding: 0 5%;}
+        .journal h3 { display: none;}
+        .banner {display: none;}
+        .makers {align-items: center;
+        text-align: center;}
+        /*this is the logo position*/
+        .logonav div {
+    margin-left: 14%;
+    display: block;
+    flex: 3 3 auto;
+}
+        }   
+
+    @media only screen and (max-width: 768px) {  
+
+.logonav_inner {
+  list-style-type: none;
+  margin: 0;
+  padding: 5%;
+  flex-direction: column;
+  display: none;
+  text-align: center;
+  background-color:#efe6e1;
+  background-size: 100vw;
+}
+.logonav_inner li a {color: #372e2c;
+font-weight: bold;
+font-size: 2rem;}
+
+.logonav {display: flex;
+    flex-direction: column;
+padding-top: 8%;
+padding-bottom: 5%;
+align-items: flex-start;
+}
+/*this makes a full color back-ground on click of hamburger */
+.logonav ul {width: 100vw;}
+/* this positions the logo*/
+.logonav div {
+    margin-left: 10%;
+    display: block;
+    flex: 3 3 auto;
+}
+/*this makes the logo dissapear on hamburger click*/
+.lognav img {display: none;}
+
+.logonav_inner { padding-left: 5%;
+padding-top: 5%; }
+
+.show-items {
+  display: flex;
+}
+/*this moves the hamburger over a little with the padding*/
+        .logonav .toggle {
+  position: absolute;
+  cursor: pointer;
+  padding-left: 5%; 
+}
+
+           

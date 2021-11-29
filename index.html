@@ -3,80 +3,25 @@
  <head>	
      <title>Home Page Website Project</title>
      <meta charset="utf-8"> 
+     <!--for responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="style.css">
+    <!--the style sheet for a responsive layout please note the website was coded before the lesson of mobile first-->
+
+    <link rel="stylesheet" href="responsivenav.css">
+    <!--included some google fonts-->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <!--this is the hamburger icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <style>
-         @media only screen and (max-width: 1000px) {.video iframe {width:  90vw; height: 80vh;}}
-         @media only screen and (max-width: 765px) 
-         {
-        .video iframe {width:  90vw; height: 60vh;}
-        .featureinfo p {display: none;}
-        .journalinfo p {display: none;}   
-        nav .toggle {
-  }  
-    }
-    @media only screen and (max-width: 500px) {
-        .video iframe {width:  90vw; height: 40vh;}
-        .products {flex-direction: column;}
-        .products li {max-width: 100%;
-        margin-bottom: 1%;}
-        .hero {align-items: center;
-            text-align: center;}
-        .hero h3 {display: none;}
-        .hero h1 {padding-bottom: 3%;}
-        .featuredproduct { display: none;}
-        .journal {flex-direction: column;}
-        .journal div {width: 100%;}
-        .journalinfo { padding: 0 5%;}
-        .journal h3 { display: none;}
-        .banner {display: none;}
-        .makers {align-items: center;
-        text-align: center;}
-        }    
-
-    @media only screen and (max-width: 778px) {     
-.logonav_inner {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-  display: none;
-  background-color: #372e2c;
-  text-align: center;
-}
-.logonav_inner li a {color: white;}
-.logonav  {display: flex;
-    flex-direction: column;
-padding-left: 5%;
-padding-top: 3%;
-               align-items: flex-start;
-            font-weight: bold;
-    }
-.show-items {
-  display: flex;
-}
-        .logonav .toggle {
-  align-self: flex-end;
-  justify-content:flex-end;
-  position: absolute;
-  cursor: pointer;
-  padding-top: 3%;
-  padding-right: 5%;
-}
-}
-     </style>
  </head> <!--included some google fonts-->
-
  <body>
-     <header class="header"> <!-- brown banner and pink section in line vertically flex-->
+     <header class="header"> <!-- brown banner and cream section in line vertically flex-->
              <section class="banner">
               <div class="wrap"><h4>We Support Nourish Cowichan With Soap Donations</h4></div>
              </section>
          <nav class="logonav wrap"> <!--logo and nav side by side flex-->
-             <div><a href="index.html"><img src="images/logo.png" alt="Farm and Folk logl" width="300"></a>
+             <div><a href="index.html"><img class="logosize" src="images/logo.png" alt="Farm and Folk logo"></a>
             </div>
              <ul class="logonav_inner" id="nav-items"> 
                  <li><a href="index.html">HOME</a></li>
@@ -87,7 +32,6 @@ padding-top: 3%;
             <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
          </nav>
      </header>
-    
      <main> 
          <section class="hero columnwrap background"> <!--hero section--><!--https://codetheweb.blog/fullscreen-image-hero/-->
              <h1>Farm-To-Body<br>Handmade Artisan Soaps</h1>
