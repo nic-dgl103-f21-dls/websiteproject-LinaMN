@@ -543,7 +543,7 @@ form { display: flex;
 }
 form label { margin: 5%;}
 
-/* for solid black next button */
+/* style for solid black next button */
 .quiz .btnalt { /* a elements are inline by default block fixes this */ 
             /* Positioning and sizing */
             display: block;
@@ -565,7 +565,9 @@ form label { margin: 5%;}
             font-weight: 500;
             font-family: "Josefin Sans", sans-serif;           
 }
-
+#buttonsolid {background-color: #372e2c;
+              color: #FEFAF4;
+}
 /*for quiz 5 email section */
 .email {display: flex;
 margin: 0;
