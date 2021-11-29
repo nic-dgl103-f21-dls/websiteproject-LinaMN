@@ -540,6 +540,8 @@ form { display: flex;
        flex-direction: column;
        align-items: center;
        justify-content: center;
+       max-width: 100%;
+
 }
 form label { margin: 5%;}
 
@@ -569,21 +571,22 @@ form label { margin: 5%;}
               color: #FEFAF4;}
 /*for quiz 5 email section */
 .email {display: flex;
-margin: 0;
+margin: 0 0 0 0;
 flex-direction: row;
 }
+.emailpadding {padding-top: 0;}
 
 /* the email and submit button together*/
-.email label { margin: 5% 0 0 0;
+.email label { margin: 0;
      padding: 3px;
 }
-
 /*the email input */
 .emailintake {
-  padding: 10px 120px 10px 5px;
+  padding: 10px 175px 10px 5px;
   border: 1px solid #8c8b8b;
   border-radius: 4px;
   font-size: 1.6rem;
+  font-family: "Cormorant Garamond", serif;  
 }
 /*the submit input*/
 .submit { 
@@ -594,9 +597,42 @@ color: #FEFAF4;
 background-color: #372e2c;
 font-family: "Josefin Sans", sans-serif;  
 font-size: 1.6rem; 
+margin: 1% 0;
 }
+.comments { /*comments input */
+width: 100%;
+margin-bottom: 1%;
+text-align: center;
+}
+/*inner comment box*/
+#comments {font-family: "Cormorant Garamond", serif; 
+border: 1px solid #8c8b8b;
+border-radius: 4px;
+font-size: 1.6rem; 
+width: 50%;
+color: #8c8b8b;
+height: 1%;
+padding-top: 1%;
+padding-left: 1%;
+}
+/*text above email input*/
+.emailpadding { display: flex;
+     flex-direction: column;
+     width: 100%;
+align-items: center;
+text-align: center;
+padding-top: 5%;
+width: 900px;
+}
+.emailpadding p {color: #8c8b8b;}
 
-      
+/*text above comment input*/
+.marginless {margin: 2% 0 0 0;
+font-weight: 100;
+font-size: 2rem;
+color: #372e2c;
+} /*to space out the comment section on quiz 5 because I added it in last and it's a bit wonky */
+   
 
             
             
