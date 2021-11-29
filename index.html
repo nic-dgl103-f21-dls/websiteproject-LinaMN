@@ -4,85 +4,79 @@
      <title>Home Page Website Project</title>
      <meta charset="utf-8"> 
      <!--for responsiveness-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="style.css">
-    <!--the style sheet for a responsive layout please note the website was coded before the lesson of mobile first-->
-
-    <link rel="stylesheet" href="responsivenav.css">
-    <!--included some google fonts-->
+     <!--the style sheet for a responsive layout please note the website was coded before the lesson of mobile first-->
+     <link rel="stylesheet" href="responsivenav.css">
+     <!--included some google fonts-->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
-    <!--this is the hamburger icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- </head> <!--included some google fonts-->
+     <!--this is the hamburger icon-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head> 
  <body>
      <header class="header"> <!-- brown banner and cream section in line vertically flex-->
-             <section class="banner">
-              <div class="wrap"><h4>We Support Nourish Cowichan With Soap Donations</h4></div>
-             </section>
-         <nav class="logonav wrap"> <!--logo and nav side by side flex-->
-             <div><a href="index.html"><img class="logosize" src="images/logo.png" alt="Farm and Folk logo"></a>
-            </div>
-             <ul class="logonav_inner" id="nav-items"> 
+         <section class="banner"> <!--the brown top announcement banner-->
+             <div class="wrap"><h4>We Support Nourish Cowichan With Soap Donations</h4></div>
+         </section>
+         <nav class="logonav wrap"> <!--logo and nav side by side in flex-->
+             <div><a href="index.html"><img class="logosize" src="images/logo.png" alt="Farm and Folk logo"></a></div> <!--logo-->
+             <ul class="logonav_inner" id="nav-items"> <!--nav-->
                  <li><a href="index.html">HOME</a></li>
                  <li><a href="about.html">ABOUT</a></li>
                  <li><a href="shop.html">SHOP</a></li>
                  <li><a href="quiz.html">SOAP QUIZ</a></li>
              </ul> 
-            <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+             <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a> <!--the hamburger link on screens less than 768px-->
          </nav>
      </header>
      <main> 
-         <section class="hero columnwrap background"> <!--hero section--><!--https://codetheweb.blog/fullscreen-image-hero/-->
+         <section class="hero columnwrap background"> <!--hero section--> <!--https://codetheweb.blog/fullscreen-image-hero/-->
              <h1>Farm-To-Body<br>Handmade Artisan Soaps</h1>
              <h3>Beautifully clean + effective body care products<br> with the finest plant-powered ingredients</h3>
              <a href="shop.html" class="btn">SHOP NOW</a>
          </section>
-         <section class="columnwrap"> <!-- collection and pics in line vertically-->
-            <h2 class="anothermargin">Collection</h2>
+         <section class="columnwrap"> <!-- product collection section - heading and pic group in flexbox direction column-->
+             <h2 class="anothermargin">Collection</h2>
              <ul class="products">
-               <li><a href="shop.html"><img src="images/soap1.jpg" alt="woman holding soap"><figcaption>Artisan Soap</figcaption></a></li>
-               <li><a href="shop.html"><img src="images/candles.JPG" alt="3 pottery candles one empty to show espresso cup"><figcaption>Pottery Candles</figcaption></a> </li> 
-               <li><a href="shop.html"><img src="images/shopall1.JPG" alt="lavender buds"><figcaption>Shop All</figcaption>
-                 </a></li>
+                <!--this is the group of 3 photos aligned in a row-->
+                 <li><a href="shop.html"><img src="images/soap1.jpg" alt="woman holding soap">
+                 <figcaption>Artisan Soap</figcaption></a></li>
+                 <li><a href="shop.html"><img src="images/candles.JPG" alt="3 pottery candles one empty to show espresso cup">
+                 <figcaption>Pottery Candles</figcaption></a></li> 
+                 <li><a href="shop.html"><img src="images/shopall1.JPG" alt="lavender buds">
+                 <figcaption>Shop All</figcaption></a></li>
              </ul> 
          </section>
-         <section class="video columnwrap"> <!--video--> <!--added demo video because I don't have one-->
+         <section class="video columnwrap"> <!--video section--> <!--added demo video because I don't have one-->
              <h2>Discover Nourishing, Natural Soap</h2>
              <iframe src="https://player.vimeo.com/video/281688738?h=ec696fcc67" frameborder="0"
                 allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
          </section>
-         <section class="featuredproduct wrap"><!--featured product this is for horizontal figure and aside-->
-            <div><a href="shop.html">
-                 <img src="soap/lavcropped.jpg" alt="bar of thieves soap">
-                  </a></div>
-             <aside class="featureinfo">
+         <section class="featuredproduct wrap"> <!--featured product section-->
+             <div><a href="shop.html"><img src="soap/lavcropped.jpg" alt="bar of lavender soap"></a></div> <!--lavender soap picture-->
+             <aside class="featureinfo"> <!--product purchase info-->
                      <h2> Lavender Shea Butter Natural Soap</h2>
+                     <h3>with lavender + cedar essential oils</h3> 
                      <h3>$14</h3>
-                     <h3>Quantitiy</h3> <!--add number selection-->
-                     <a href="shop.html" class="btn">BUY NOW</a>
-                     <p>There’s nothing quite like the warm scent of the Thieves essential oil. This hydrating and lush natural soap bar cleanses and invigorates your skin while it renews and refreshes your senses. Make your showers more luxurious with the signature aroma of cinnamon, cloves, lemon, rosemary, eucalyptus, and cocoa.</p>
+                     <a href="shop.html" class="btn">BUY NOW</a> <!--this button would lead to the indiviual product page if there was one-->
+                     <p>Lavender has long been known for its healing and soothing properties, especially for sensitive skin. Our Lavender Soap is made with organic lavender buds grown right here on our own farm. Allow the light floral scent of this deeply nourishing soap to relax and rejuvenate you.
+                     </p>
              </aside>
          </section>
-         <section class="makers columnwrap background"> <!--maker banner section-->
+         <section class="makers columnwrap background"> <!--maker info section with background pic like hero section-->
              <h3>Our Story</h3>
              <h2>We Believe In The Power<br> Of Nature To Help You Unwind</h2>
-             <a href="about.html" class="btn">LEARN MORE</a>
+             <a href="about.html" class="btn">LEARN MORE</a> <!--leads to about page-->
          </section>
-         <section class="journal">
-            <div><a href="journal.html"><img src="images/breadcropped.jpg" alt="child holding muffin"></a></div>
-            <!--should lead to journal page-->
+         <section class="journal"> <!--this is given class journal because it would lead to the journal(blog) if there was one-->
+             <div><a href="journal.html"><img src="images/breadcropped.jpg" alt="child holding muffin"></a></div>
              <aside class="journalinfo">
                  <h2>We Support Nourish Cowichan</h2>
                  <h3>Helping Kids in the Cowichan Valley</h3>
-                 <p>Created by 3 natural born activists with a strong belief in community service, Nourish Cowichan Society is a fast
-                growing organization co-founded by Anita Carroll, Fatima Da Silva and Dina Holbrook</p>
-                
-                <p>When they became aware that children in the valley were going to school without breakfast, Fatima, Dina & Anita
-                immediately began planning how to help nourish the little ones, and so within just a few weeks and with the help of a
-                local school principal, a breakfast program was put in place.
-                </p>
-                 <a href="shop.html" class="btn">READ OUR JOURNAL</a>
+                 <p>Created by 3 natural born activists with a strong belief in community service, Nourish Cowichan Society is a fast growing organization co-founded by Anita Carroll, Fatima Da Silva and Dina Holbrook</p>
+                 <p>When they became aware that children in the valley were going to school without breakfast, Fatima, Dina & Anita immediately began planning how to help nourish the little ones, and so within just a few weeks and with the help of a local school principal, a breakfast program was put in place.</p>
+                 <a href="shop.html" class="btn">READ OUR JOURNAL</a> <!--button would lead to journal-->
              </aside>
          </section>
       </main> 
@@ -94,7 +88,7 @@
             var element = document.getElementById("nav-items");
             element.classList.toggle("show-items");
         }
-    </script> 
+     </script> 
  </body>
 </html>
 
