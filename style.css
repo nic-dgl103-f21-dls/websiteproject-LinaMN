@@ -11,11 +11,13 @@ img { /* so images are responsive removed pixel measurements in html and added p
       height: auto; 
 }
 /* Head Font Styles */
-h1,h2,h3,h4 { font-family: "Cormorant Garamond", serif; /*remember commas here*/
-              color: #372e2c;
+h1,h2,h3,h4 { 
+ font-family: "Cormorant Garamond", serif; /*remember commas here*/
+ color: #372e2c;
 }
 h1 { font-size: 6.4rem;
      line-height: 1.2;
+ 
 }
 h2 { font-size: 4rem; 
 }
@@ -35,7 +37,7 @@ body { /* The body has a default margin, which we do not want interfering with i
       color: #372e2c;
       letter-spacing: 0.05rem;
       font-size: 1.7rem;
-      font-weight: 100;
+      font-weight: 500;
       letter-spacing: 0.12rem;
       
       /*background*/
@@ -116,7 +118,8 @@ body { /* The body has a default margin, which we do not want interfering with i
 }
 .logonav li a {text-decoration: none; /*removes line under*/
           color: #372e2c;
-          display: block;    
+          display: block; 
+          font-weight: 500;   
 }
 nav li a:hover { color: #986b58; /* so nav words brown on hover */
 }
@@ -427,14 +430,14 @@ footer { display: flex;
 .firstimage h2 { text-align: center;
      max-width: 550px;
      padding-left: 175px;
-     color: #efe6e1;
+     color: #FEFAF4;
 }
 /*first section with picture and written content on About Page*/
 .about  {       
           margin-top:  3%;
           margin-bottom: 5%;
           align-items: flex-start;
-          color: #efe6e1;
+          color: #FEFAF4;
           height: 100%;
 }
 
@@ -452,13 +455,14 @@ footer { display: flex;
                       width: 50%;
                      padding: 0 5%;
                      background-color: #986b58;
+                     font-weight: 500;
                      
 }    
 /*second section with picture and written content on About Page*/
 .inner_about h2 {margin: 0;
                  color: #FEFAF4;
 }
-.inner_about p {font-weight: 400;}
+.inner_about p {font-weight: 500;}
                    
 .pic2 {width: 50vw;
       height: 80vh; 
