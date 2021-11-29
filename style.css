@@ -139,7 +139,7 @@ nav li a:hover { color: #986b58; /* so nav words brown on hover */
 
       /* Background Styles */
       /* background image doesn't take colors but take gradients, 0 is full transparency in rgba, make sure to separate multiple backgrounds with commas */
-      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("images/soaplady.JPG");
+      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("images/soaplady1.jpg");
       
 }
 /* spcaing and styles of wording on top of hero background */
@@ -285,7 +285,7 @@ nav li a:hover { color: #986b58; /* so nav words brown on hover */
 
       /* Background Styles */
       /* background image doesn't take colors but take gradients, 0 is full transparency in rgba, make sure to separate multiple backgrounds with commas */
-      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/soapwoman.JPG");
+      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/soapwoman1.JPG");
 }
 /*styles for headings on top of picture background above*/
 .makers h2 { /* Margins */
