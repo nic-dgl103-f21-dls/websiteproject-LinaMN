@@ -23,7 +23,7 @@ cursor: pointer; /* allows customer cursor little hand */
  justify-content: center; /* video said these last 3 itmes align check mark symbol*/
  flex-shrink: 0; /*prevents box from shrinking with font and lose perfect square */
  padding-left: 4.5px;
- transition: background 0.15s, border-color 0.15s; /*delay in color for fun effect */
+ transition: all 0.15s ease-in-out; /*delay in color for fun effect */
  margin-right: 10px;
 }
 
