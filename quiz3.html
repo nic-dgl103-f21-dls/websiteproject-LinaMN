@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ <title>Quiz Page Website Project</title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="checkbox.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Josefin+Sans&display=swap"
+    rel="stylesheet">
+ </head>
+ <body>
+    <header class="header">
+        <!-- brown banner and pink section in line vertically flex-->
+        <section class="banner">
+            <div class="wrap">
+                <h4>We Support Nourish Cowichan With Soap Donations</h4>
+            </div>
+        </section>
+        <nav class="logonav wrap quiznav">
+            <!--logo and nav side by side flex-->
+            <div><a href="index.html"><img src="images/logo.png" alt="Farm and Folk logl" width="300"></a>
+            </div>
+            <ul class="logonav_inner">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="quiz.html">SOAP QUIZ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container columnwrap">
+         <h3>SOAP QUIZ &mdash; 2 OF 4</h3>
+         <div class="border">
+             <div class="brown" style="height:20px;width:50%">
+         </div>
+         </div>
+        </div>
+        <section class="quiz quizstart">
+            <form class="center" name="soapquiz" method="post" id="soapquiz" action="https://learndigital.dev/programs/dgl103-form.php">
+                <h1>What is your skin type?</h1>
+                <div class="wrap">
+                    <label class="checkbox" for="Dry">
+                        <input class="checkbox__input" type="checkbox" name="Dry" id="Dry" value="yes">
+                        <span class="checkbox__box">
+                        </span>
+                        <span class="fontsize">Dry</span>
+                    </label>
+                    <label class="checkbox" for="Oily">
+                        <input class="checkbox__input" type="checkbox" name="Oily" id="Oily" value="yes">
+                        <span class="checkbox__box">
+                        </span>
+                        <span class="fontsize">Oily</span>
+                    </label>
+                    <label class="checkbox" for="Combination">
+                        <input class="checkbox__input" type="checkbox" name="Combination" id="Combination" value="yes">
+                        <span class="checkbox__box">
+                        </span>
+                        <span class="fontsize">Combination</span>
+                    </label>
+                    <label class="checkbox" for="Even">
+                        <input class="checkbox__input" type="checkbox" name="Even" id="Even" value="yes">
+                        <span class="checkbox__box">
+                        </span>
+                        <span class="fontsize">Even</span>
+                    </label>
+                </div>
+            </form>
+            <div class="button wrap">
+                <a href="quiz2.html" class="btnalt">BACK</a>
+                <a href="quiz4.html" class="btnalt" id="buttonsolid">NEXT</a>
+            </div>
+        </section>
+    </main>
+    <footer class="foot">
+        <div class="wrap">
+            <p>© FARM & FOLK | All Rights Reserved | Cowichan Station, British Columbia | 250.510.6701 |
+                hello@farmandfolk.ca |</p>
+        </div>
+    </footer>
+ </body>
+</html>

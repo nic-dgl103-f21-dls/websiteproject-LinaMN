@@ -1,0 +1,51 @@
+
+/* Followed youtube tutorial but added a bunch of my own code to style it the way I like https://youtu.be/xNtT8NGinxU */
+
+
+html {font-size: 62.5%} /* so I can work with rem */
+* { box-sizing: border-box;} 
+
+.checkbox { 
+display: inline-flex; /* moves word beside check box */
+align-items: center; /* centers word to check box */
+cursor: pointer; /* allows customer cursor little hand */
+} 
+
+.checkbox__input {display: none;} /* hides original checkbox style */
+
+.checkbox__box { /* styling of check box */
+ width: 1.75em;
+ height: 1.75em; /* em means relative to font size */
+ border: 3px solid #372e2c; 
+ border-radius: 2px; /*rounded edges*/
+ display: flex;
+ align-items: center;
+ justify-content: center; /* video said these last 3 itmes align check mark symbol*/
+ flex-shrink: 0; /*prevents box from shrinking with font and lose perfect square */
+ padding-left: 4.5px;
+ transition: background 0.15s, border-color 0.15s; /*delay in color for fun effect */
+ margin-right: 10px;
+}
+
+.checkbox__box::after { content: '\2714'; /*this is the code for the check mark*/
+ color: #fff;  
+ transform: scale(0);  /*no check initial*/
+ transition: transform 0.15s; /*another delay for effect*/
+}
+
+.checkbox__input:checked + .checkbox__box { 
+ background-color: #996b5996;
+ border-color: #986b58;
+ border-style: double;} /*stying on click*/
+
+.checkbox__input:checked + .checkbox__box::after {
+ transform: scale(1); /*check after click*/
+}
+
+.checkbox h2 {
+  margin-left: 10px; /*styling for word*/
+ font-weight: 100;
+ font-size: 5rem;
+}
+
+

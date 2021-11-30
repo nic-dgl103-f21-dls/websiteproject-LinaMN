@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Quiz Page Website Project</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+ </head>
+ <body> 
+     <header class="header">
+        <!-- brown banner and pink section in line vertically flex-->
+        <section class="banner">
+            <div class="wrap">
+                <h4>We Support Nourish Cowichan With Soap Donations</h4>
+            </div>
+        </section>
+        <nav class="logonav wrap quiznav">
+            <!--logo and nav side by side flex-->
+            <div><a href="index.html"><img src="images/logo.png" alt="Farm and Folk logl" width="300"></a>
+            </div>
+            <ul class="logonav_inner">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="quiz.html">SOAP QUIZ</a></li>
+            </ul>
+        </nav>
+     </header>
+     <main class="quiz">
+     <div class="container columnwrap">
+          <h3>SOAP QUIZ &mdash; 4 OF 4</h3>
+          <div class="border">
+             <div class="brown" style="height:20px;width:100%"></div>
+         </div>
+         <form name="soapquiz" method="post" id="soapquiz" action="https://learndigital.dev/programs/dgl103-form.php">
+             <label class="comments" for="comments">
+              <span class="marginless">Is there anything else you would like to share?</span>
+             </label>
+             <textarea name="comments" id="comments">Enter comments</textarea>
+             <div class="emailpadding">
+                 <h1>Get Your Soap Quiz Results!</h1>
+                 <p>&ast;By sharing your email you agree to join our email newsletter</p>
+             </div>
+             <div class="email">
+                 <label for="email">
+                 <input class="emailintake" type="email" id="email" name="email" placeholder="Email Address &ast;" required="required">
+                 </label>
+                 <label for="submit"><input class="submit" type="submit" id= submit value="GET YOUR RESULTS"></label>
+             </div>
+          </form>
+     </div>
+     </main>
+     <footer class="foot">
+         <div class="wrap">
+         <p>© FARM & FOLK | All Rights Reserved | Cowichan Station, British Columbia | 250.510.6701 |
+                hello@farmandfolk.ca |</p>
+         </div>
+     </footer>
+ </body>
+</html>
